@@ -1,0 +1,960 @@
+Script started on 2021-07-28 20:39:40+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;saurabh@TIGERTEMP12: ~[01;32msaurabh@TIGERTEMP12[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-07-28 20:39:43+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 11:19:29+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="109" LINES="30"]
+]0;saurabh@TIGERTEMP12: ~[01;32msaurabh@TIGERTEMP12[00m:[01;34m~[00m$ ls[K[Kcd /mnt/c/Users/saurabh.gupta
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ ls
+[0m[34;42m'3D Objects'[0m
+ [34;42mAnaconda3[0m
+ [34;42mAppData[0m
+[01;36m'Application Data'[0m
+ [34;42mContacts[0m
+ [01;36mCookies[0m
+ [34;42mDesktop[0m
+ [34;42mDocuments[0m
+ [34;42mDownloads[0m
+ [34;42mFavorites[0m
+ [34;42mIntelGraphicsProfiles[0m
+ [34;42mLinks[0m
+[01;36m'Local Settings'[0m
+ [34;42mMusic[0m
+[01;36m'My Documents'[0m
+ [01;32mNTUSER.DAT[0m
+ [01;32mNTUSER.DAT{0618c2e3-e6ca-11eb-ac11-b1f82acefe10}.TM.blf[0m
+ [01;32mNTUSER.DAT{0618c2e3-e6ca-11eb-ac11-b1f82acefe10}.TMContainer00000000000000000001.regtrans-ms[0m
+ [01;32mNTUSER.DAT{0618c2e3-e6ca-11eb-ac11-b1f82acefe10}.TMContainer00000000000000000002.regtrans-ms[0m
+ [01;36mNetHood[0m
+ [34;42mOneDrive[0m
+ [34;42mPictures[0m
+ [01;36mPrintHood[0m
+ [01;36mRecent[0m
+[34;42m'Saved Games'[0m
+ [34;42mSearches[0m
+ [01;36mSendTo[0m
+[01;36m'Start Menu'[0m
+ [01;36mTemplates[0m
+ [34;42mVideos[0m
+ [01;32mntuser.dat.LOG1[0m
+ [01;32mntuser.dat.LOG2[0m
+ [01;32mntuser.ini[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ pwd
+/mnt/c/Users/saurabh.gupta/Desktop
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ ls -F
+[0m[01;32m'Git Bash.lnk'[0m*   [34;42mTiger[0m/   [01;32mdesktop.ini[0m*   [34;42mshell-lesson-data[0m/   [01;32mshell-lesson-data.zip[0m*
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ ls
+[0m[01;32m'Git Bash.lnk'[0m   [34;42mTiger[0m   [01;32mdesktop.ini[0m   [34;42mshell-lesson-data[0m   [01;32mshell-lesson-data.zip[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of default
+                               modification time: atime or access or use (-u);
+                               ctime or status (-c); also use specified time
+                               as sort key if --sort=time (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report ls translation bugs to <https://translationproject.org/team/>
+Full documentation at: <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ man ls
+[?1049h[22;0;0t[?1h=LS(1)                                          User Commands                                         LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about the FILEs (the current directory by default).  Sort entries alphabetically[m
+       if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format be‐[m
+              low[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ cd shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data[00m$ cd shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls -l -h
+total 24K
+drwxrwxrwx 1 saurabh saurabh 512 Sep  6  2019 [0m[34;42mcreatures[0m
+drwxrwxrwx 1 saurabh saurabh 512 Jul 28 19:43 [34;42mdata[0m
+drwxrwxrwx 1 saurabh saurabh 512 Jul 28 19:30 [34;42mmolecules[0m
+drwxrwxrwx 1 saurabh saurabh 512 Jun  5  2019 [34;42mnorth-pacific-gyre[0m
+-rwxrwxrwx 1 saurabh saurabh  86 Jun  5  2019 [01;32mnotes.txt[0m
+-rwxrwxrwx 1 saurabh saurabh  32 Jun  5  2019 [01;32mpizza.cfg[0m
+drwxrwxrwx 1 saurabh saurabh 512 Jul 28 16:37 [34;42mproject[0m
+-rwxrwxrwx 1 saurabh saurabh 22K Jun  5  2019 [01;32msolar.pdf[0m
+drwxrwxrwx 1 saurabh saurabh 512 Sep 16  2019 [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls -r
+[0m[34;42mwriting[0m  [01;32msolar.pdf[0m  [34;42mproject[0m  [01;32mpizza.cfg[0m  [01;32mnotes.txt[0m  [34;42mnorth-pacific-gyre[0m  [34;42mmolecules[0m  [34;42mdata[0m  [34;42mcreatures[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls -F
+[0m[34;42mcreatures[0m/  [34;42mdata[0m/  [34;42mmolecules[0m/  [34;42mnorth-pacific-gyre[0m/  [01;32mnotes.txt[0m*  [01;32mpizza.cfg[0m*  [34;42mproject[0m/  [01;32msolar.pdf[0m*  [34;42mwriting[0m/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls -F -a
+[0m[34;42m.[0m/   [01;32m.bash_profile[0m*  [34;42mdata[0m/       [34;42mnorth-pacific-gyre[0m/  [01;32mpizza.cfg[0m*  [01;32msolar.pdf[0m*
+[34;42m..[0m/  [34;42mcreatures[0m/      [34;42mmolecules[0m/  [01;32mnotes.txt[0m*           [34;42mproject[0m/    [34;42mwriting[0m/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd creatures/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ cd -
+/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls -F /
+[0m[01;36mbin[0m@   [01;34mdev[0m/  [01;34mhome[0m/  [01;36mlib[0m@    [01;36mlib64[0m@   [01;34mmedia[0m/  [01;34mopt[0m/   [01;34mroot[0m/  [01;36msbin[0m@  [01;34msrv[0m/  [30;42mtmp[0m/  [01;34mvar[0m/
+[01;34mboot[0m/  [01;34metc[0m/  [01;32minit[0m*  [01;36mlib32[0m@  [01;36mlibx32[0m@  [01;34mmnt[0m/    [01;34mproc[0m/  [01;34mrun[0m/   [01;34msnap[0m/  [01;34msys[0m/  [01;34musr[0m/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls .
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ exit
+exit
+
+Script done on 2021-07-29 11:29:28+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 11:31:05+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="109" LINES="30"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ cd shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data[00m$ cd shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ exit
+exit
+
+Script done on 2021-07-29 11:31:33+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 11:44:54+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ pwd
+/mnt/c/Users/saurabh.gupta
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ cd shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data[00m$ cd shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls -F
+[0m[34;42mcreatures[0m/  [34;42mdata[0m/  [34;42mmolecules[0m/  [34;42mnorth-pacific-gyre[0m/  [01;32mnotes.txt[0m*  [01;32mpizza.cfg[0m*  [34;42mproject[0m/  [01;32msolar.pdf[0m*  [34;42mwriting[0m/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ mkdir thesis
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls-F
+ls-F: command not found
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls -F
+[0m[34;42mcreatures[0m/  [34;42mdata[0m/  [34;42mmolecules[0m/  [34;42mnorth-pacific-gyre[0m/  [01;32mnotes.txt[0m*  [01;32mpizza.cfg[0m*  [34;42mproject[0m/  [01;32msolar.pdf[0m*  [34;42mthesis[0m/  [34;42mwriting[0m/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ mkdir -pproject[K[K[K[K[K[K[K [K[K[K[K[K[K[K[K[Kmkdir -p project/data project/results
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mthesis[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd project/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[00m$ ls
+[0m[34;42mdata[0m  [34;42mresults[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[00m$ cd [K[K[Kcd data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project/data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project/data[00m$ ls
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project/data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project/data[00m$ cd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[00m$ cd results/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project/results[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project/results[00m$ ls
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project/results[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project/results[00m$ cd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[00m$ cd..
+cd..: command not found
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/project[00m$ cd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls -F
+[0m[34;42mcreatures[0m/  [34;42mdata[0m/  [34;42mmolecules[0m/  [34;42mnorth-pacific-gyre[0m/  [01;32mnotes.txt[0m*  [01;32mpizza.cfg[0m*  [34;42mproject[0m/  [01;32msolar.pdf[0m*  [34;42mthesis[0m/  [34;42mwriting[0m/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd thesis
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ nano draft.txt
+[?2004h[?1049h[22;0;0t[1;23r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[21;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                           draft.txt                                                      [1;119H(B[m[22d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[23d(B[0;7m^X(B[m Exit[23;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[21d[2d[39;49m(B[m[?12l[?25h[?25l[1;111H(B[0;7mModified(B[m[2dt[?12l[?25h[?25lh[?12l[?25h[?25lu[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25lr[21d[K[2;21H[?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25l[22;16H[15X[22;31H(B[0;7mM-D(B[m DOS Format[16X[22;61H(B[0;7mM-A(B[m Append[15X[22;93H(B[0;7mB(B[m Backup File[K[23;2H(B[0;7mC(B[m Cancel[16G[15X[23;31H(B[0;7mM-M(B[m Mac Format[16X[23;61H(B[0;7mM-P(B[m Prepend[19X[23;91H(B[0;7m^T(B[m To Files[K[21d(B[0;7mFile Name to Write: draft.txt                                                                                           [21;1H(B[m[21;30H[?12l[?25h[?25l[21;30H[?12l[?25h[?25l[21;53H[1K (B[0;7m[ Writing... ](B[m[K[1;111H(B[0;7m        (B[m[21;53H(B[0;7m[ Wrote 1 line ](B[m[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Mark Text[23;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo       (B[0;7mM-6(B[m Copy Text[21d[2;21H[?12l[?25h[?25l[21d[J[23d[?12l[?25h[23;1H[?1049l[23;0;0t[?1l>[?2004l]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[01;32mdraft.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ touch my_file.txt
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[01;32mdraft.txt[0m  [01;32mmy_file.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls -l
+total 0
+-rwxrwxrwx 1 saurabh saurabh 21 Jul 29 11:49 [0m[01;32mdraft.txt[0m
+-rwxrwxrwx 1 saurabh saurabh  0 Jul 29 11:50 [01;32mmy_file.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls -l -h
+total 0
+-rwxrwxrwx 1 saurabh saurabh 21 Jul 29 11:49 [0m[01;32mdraft.txt[0m
+-rwxrwxrwx 1 saurabh saurabh  0 Jul 29 11:50 [01;32mmy_file.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ mv the[K[K[Kdraft.txt quotes.t xt
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[01;32mmy_file.txt[0m  [01;32mquotes.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ cat[K[K[Kcd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cp -r thesis thesis_backup
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mmolecules[0m           [01;32mnotes.txt[0m  [34;42mproject[0m    [34;42mthesis[0m         [34;42mwriting[0m
+[34;42mdata[0m       [34;42mnorth-pacific-gyre[0m  [01;32mpizza.cfg[0m  [01;32msolar.pdf[0m  [34;42mthesis_backup[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls thesis_backup/
+[0m[01;32mmy_file.txt[0m  [01;32mquotes.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd thesis
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[01;32mmy_file.txt[0m  [01;32mquotes.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ rm my_file.txt 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[01;32mquotes.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ cd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mmolecules[0m           [01;32mnotes.txt[0m  [34;42mproject[0m    [34;42mthesis[0m         [34;42mwriting[0m
+[34;42mdata[0m       [34;42mnorth-pacific-gyre[0m  [01;32mpizza.cfg[0m  [01;32msolar.pdf[0m  [34;42mthesis_backup[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ rm thesis
+rm: cannot remove 'thesis': Is a directory
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ rm -r thesis
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mthesis_backup[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ rm -r thesis_backup/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd [K[K[Kmkdir thesis
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mthesis[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd thesis/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ touch quote.txt
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ nano quote.txt 
+[?2004h[?1049h[22;0;0t[1;23r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[21;54H(B[0;7m[ Reading... ](B[m[21;53H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 4.8                                           quote.txt                                                      [1;119H(B[m[22d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[23d(B[0;7m^X(B[m Exit[23;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[21d[2d[39;49m(B[m[?12l[?25h[?25l[1;111H(B[0;7mModified(B[m[2dT[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25ld[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25lm[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[22;16H[15X[22;31H(B[0;7mM-D(B[m DOS Format[16X[22;61H(B[0;7mM-A(B[m Append[15X[22;93H(B[0;7mB(B[m Backup File[K[23;2H(B[0;7mC(B[m Cancel[16G[15X[23;31H(B[0;7mM-M(B[m Mac Format[16X[23;61H(B[0;7mM-P(B[m Prepend[19X[23;91H(B[0;7m^T(B[m To Files[K[21d(B[0;7mFile Name to Write: quote.txt                                                                                           [21;1H(B[m[21;30H[?12l[?25h[?25l[21;53H[1K (B[0;7m[ Writing... ](B[m[K[1;111H(B[0;7m        (B[m[21;53H(B[0;7m[ Wrote 1 line ](B[m[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Mark Text[23;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo       (B[0;7mM-6(B[m Copy Text[21d[2;21H[?12l[?25h[?25l[21d[J[23d[?12l[?25h[23;1H[?1049l[23;0;0t[?1l>[?2004l]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[01;32mquote.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ cp qo[Kuote.txt my_file. txt
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ la[Ks
+[0m[01;32mmy_file.txt[0m  [01;32mquote.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ cp quote.txt my_file.txt 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[01;32mmy_file.txt[0m  [01;32mquote.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ cd qu[K[K[K[K[Kcp quote.txt my_file.txt backup
+cp: target 'backup' is not a directory
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[01;32mmy_file.txt[0m  [01;32mquote.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ mak[K[Kkdir backup
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[34;42mbackup[0m  [01;32mmy_file.txt[0m  [01;32mquote.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ lsmkdir backupls[Kcp quote.txt my_file.txt backup
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ ls
+[0m[34;42mbackup[0m  [01;32mmy_file.txt[0m  [01;32mquote.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ cd backup/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis/backup[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis/backup[00m$ ls
+[0m[01;32mmy_file.txt[0m  [01;32mquote.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis/backup[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis/backup[00m$ cd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/thesis[00m$ cd /[K..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mthesis[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ rm -r thesis/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ lsmol[K[K[K[Ks molecules/
+[0m[01;32mall.pdb[0m    [01;32mcubane.pdb[0m  [01;32mlength.txt[0m   [01;32mmiddle.sh[0m   [01;32mpentane.pdb[0m  [01;32mtestfile01.txt[0m
+[01;32mall_3.pdb[0m  [01;32methane.pdb[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpropane.pdb[0m  [01;32mtestfile02.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd molecules/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ rm all_3.pdb 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ ls *.pdb
+[0m[01;32mall.pdb[0m  [01;32mcubane.pdb[0m  [01;32methane.pdb[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpentane.pdb[0m  [01;32mpropane.pdb[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ exit
+exit
+
+Script done on 2021-07-29 12:05:51+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 12:06:40+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="23"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ cd shell-lesson-data/shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls molecules/
+[0m[01;32mall.pdb[0m     [01;32methane.pdb[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m   [01;32mpropane.pdb[0m     [01;32mtestfile02.txt[0m
+[01;32mcubane.pdb[0m  [01;32mlength.txt[0m  [01;32mmiddle.sh[0m    [01;32mpentane.pdb[0m  [01;32mtestfile01.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd molecules/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ ls
+[0m[01;32mall.pdb[0m     [01;32methane.pdb[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m   [01;32mpropane.pdb[0m     [01;32mtestfile02.txt[0m
+[01;32mcubane.pdb[0m  [01;32mlength.txt[0m  [01;32mmiddle.sh[0m    [01;32mpentane.pdb[0m  [01;32mtestfile01.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ wc cubane.pdb 
+  20  156 1158 cubane.pdb
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ wc *.pdb
+   6   12   93 all.pdb
+  20  156 1158 cubane.pdb
+  12   84  622 ethane.pdb
+   9   57  422 methane.pdb
+  30  246 1828 octane.pdb
+  21  165 1226 pentane.pdb
+  15  111  825 propane.pdb
+ 113  831 6174 total
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ wc -l *.pdb > lengths.txt
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ ls
+[0m[01;32mall.pdb[0m     [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmiddle.sh[0m   [01;32mpentane.pdb[0m  [01;32mtestfile01.txt[0m
+[01;32mcubane.pdb[0m  [01;32mlength.txt[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpropane.pdb[0m  [01;32mtestfile02.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ ls length.txt [1@s
+[0m[01;32mlengths.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ cat lengths.txt 
+   6 all.pdb
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 113 total
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ sort -n lengths.txt 
+   6 all.pdb
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 113 total
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ sort -n lengths.txt  >sorted-lengths.txt sorted-lengths.txt[C[C[C[C[C[C[C
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ ls
+[0m[01;32mall.pdb[0m     [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmiddle.sh[0m   [01;32mpentane.pdb[0m  [01;32msorted-lengths.txt[0m  [01;32mtestfile02.txt[0m
+[01;32mcubane.pdb[0m  [01;32mlength.txt[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpropane.pdb[0m  [01;32mtestfile01.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ cat sorted-lengths.txt 
+   6 all.pdb
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 113 total
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ exit
+exit
+
+Script done on 2021-07-29 12:10:43+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 12:54:15+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="23"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ echo hello world
+hello world
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ sort -n lengths.txt | head -n 1
+sort: cannot read: lengths.txt: No such file or directory
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/sj[Khell-lesson-data/shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ lscd Desktop/shell-lesson-data/shell-lesson-data/[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ sort -n lengths.txt | head -n 1[K
+sort: cannot read: lengths.txt: No such file or directory
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd molecules/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ ls
+[0m[01;32mall.pdb[0m     [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmiddle.sh[0m   [01;32mpentane.pdb[0m  [01;32msorted-lengths.txt[0m  [01;32mtestfile02.txt[0m
+[01;32mcubane.pdb[0m  [01;32mlength.txt[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpropane.pdb[0m  [01;32mtestfile01.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ lscd molecules/sort -n lengths.txt | head -n 1
+   6 all.pdb
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ wc -l *.pdb | sort -n
+   6 all.pdb
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 113 total
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ cut -d , -f,[K 2 [K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[0m[01;32mall.pdb[0m     [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmiddle.sh[0m   [01;32mpentane.pdb[0m  [01;32msorted-lengths.txt[0m  [01;32mtestfile02.txt[0m
+[01;32mcubane.pdb[0m  [01;32mlength.txt[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpropane.pdb[0m  [01;32mtestfile01.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ cd..
+cd..: command not found
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ cd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cdcr[K[K creatures/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ ls
+[0m[01;32mbasilisk.dat[0m  [01;32mminotaur.dat[0m  [01;32municorn.dat[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ cd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data[00m$ ls
+[0m[01;32mamino-acids.txt[0m  [01;32manimals.txt[0m  [01;32mfinal.txt[0m  [34;42mpdb[0m          [01;32msalmon.txt[0m  [01;32msunspot.txt[0m
+[34;42manimal-counts[0m    [34;42melements[0m     [01;32mmorse.txt[0m  [01;32mplanets.txt[0m  [01;32mspecies.sh[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data[00m$ cdan[K[K s[Kanimal-counts/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ ls
+[0m[01;32manimals.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ cat animals.txt 
+2012-11-05,deer,5
+2012-11-05,rabbit,22
+2012-11-05,raccoon,7
+2012-11-06,rabbit,19
+2012-11-06,deer,2
+2012-11-06,fox,4
+2012-11-07,rabbit,16
+2012-11-07,bear,1
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ wc -l *.pdb | sort -n[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[Kcut -d ,  -f 2 animals.txt 
+deer
+rabbit
+raccoon
+rabbit
+deer
+fox
+rabbit
+bear
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ cut -d , -f 2 animals.txt  | head 2
+head: cannot open '2' for reading: No such file or directory
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ cut -d , -f 2 animals.txt  | head 2[K
+deer
+rabbit
+raccoon
+rabbit
+deer
+fox
+rabbit
+bear
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ cut -d , -f 2 animals.txt  | head -n 2
+deer
+rabbit
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ cut -d , -f 2 animals.txt  | head -n 2[K[K[K[K[K[K[K[K[Ksort
+bear
+deer
+deer
+fox
+rabbit
+rabbit
+rabbit
+raccoon
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ cut -d , -f 2 animals.txt  | sort | head -n 2
+bear
+deer
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ cut -d , -f 2 animals.txt  | sort | head -n 2[K[K[K[K[K[K[K[K[Kuniq
+bear
+deer
+fox
+rabbit
+raccoon
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/data/animal-counts[00m$ ext[Kit
+exit
+
+Script done on 2021-07-29 13:01:55+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 13:05:42+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="23"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/sj[Khell-lesson-data/shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cdcr[K[K ce[Ke[Kreatures/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ ls
+[0m[01;32mbasilisk.dat[0m  [01;32mminotaur.dat[0m  [01;32municorn.dat[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ for fu[K[Kname[K[K[K[Kfnam[K[K[Kilename in basilisk.dat  minotaur.dat  unicorn.dat
+> do
+> head -2 [K[K[K-n -2 $filename | tail -n 1
+> done
+TACAGAGGTT
+CTATAATGAG
+TACAGAGGTT
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ ba
+baaupdate.exe           base64                  bash                    batmeter.dll
+backgroundTaskHost.exe  basecsp.dll             bash.exe                
+badblocks               basename                bashbug                 
+base32                  basesrv.dll             batch                   
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ baba[K[K
+baaupdate.exe           base64                  bash                    batmeter.dll
+backgroundTaskHost.exe  basecsp.dll             bash.exe                
+badblocks               basename                bashbug                 
+base32                  basesrv.dll             batch                   
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ ba
+baaupdate.exe           base64                  bash                    batmeter.dll
+backgroundTaskHost.exe  basecsp.dll             bash.exe                
+badblocks               basename                bashbug                 
+base32                  basesrv.dll             batch                   
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ ba[K[Kba[K[Kminiterm [K[K[K[K[K[K[K[K[Kls
+[0m[01;32mbasilisk.dat[0m  [01;32mminotaur.dat[0m  [01;32municorn.dat[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ cat minotaur.dat 
+COMMON NAME: minotaur
+CLASSIFICATION: bos hominus
+UPDATED: 1765-02-17
+CCCGAAGGAC
+CGACATCTCT
+TCTGAGCCCC
+GTCAAAACAC
+TTGAATCGTC
+TGCGGGTCGC
+TGCCGGTGTC
+TATCAGTCCC
+CACGTTCTCG
+GAAGCCCCCG
+TTAACCGGCA
+ATATGAGTCC
+GATCATATCG
+AGAGCGAGGT
+GTACCCGGGC
+CTTTTCTGCA
+GCTCTGCAGC
+TACCTATGCG
+GACCCCGGTC
+TTCGATTGTT
+GACTACCTCT
+GCTAGGCATT
+CCGTTACCAA
+CAGAATCAGA
+AGTCACTATA
+ACTGAGTCAC
+GGTTTCTCCC
+AGCAACGGTT
+GAAAGGGTTA
+ACTGGGACTT
+TCACGGATTG
+GGTCGTTTAT
+TATCCGCTCC
+CCTGTGTTAG
+AGCTCAGTCC
+ATTGGACTCG
+TCTCGTCAAT
+GACATTTCGC
+ATATAAATTA
+CCGTCCAGGG
+TCGCATTTAT
+ATCTTAGTCT
+GAGGGATGGC
+TAAGTCTCTC
+TCGGCTTGAT
+CGGTCTGCAT
+TGTAATTAAA
+TGTAACTCCG
+TCTTACCTCG
+GACAATTGAG
+CGCTGGGTAA
+TATTACGTAG
+CATCTATTTA
+AAGAGGCTCA
+CCCGGTCAAA
+AGAGACTGAC
+CGGCCGGACG
+AGCGTTGAAC
+GGACCTCCTT
+CAGGCCTATG
+TCTCTCTAGC
+CAATAACAGG
+TCAAGTCCGA
+TATCGCACAA
+TTATCTGCTA
+ATAATCCATA
+AGACGGGATG
+TTGGGAAAAA
+ATCGGAGTTC
+ATTGCCAGGA
+AAGCATTGAA
+GTGGTTCCCG
+GCCACTAGTA
+CAGTCGACGC
+TGCGAGAGTA
+CGATCAGGCG
+CCCTAGGACG
+GGTTGGACCG
+AGTGAACGAA
+GCGATTGATG
+CCCAGTATTG
+GTTTCGGGTC
+CCACCAGGAA
+CAATGTTGGA
+CTTTAGCACG
+ACAGGAATCA
+ATCGTTTCGT
+AATGGTGGCA
+CTTTGGGGTT
+GCAGGCCCGC
+CTGTGCCTTC
+AACGGTCGGC
+AAATAGGACA
+GAGATTTCCT
+GCCTCAAACA
+TCGCAAGACG
+ATTTATCCGG
+GAGTCCCAGT
+GGGTTCTCGA
+GTTTAAGCTG
+CAAGCATCCT
+GTTACCCCGA
+GTGCTGACAG
+GCACGAGACC
+AGGATTTATC
+GGGCACGCGC
+CCATCTGTAA
+TTTTGTTTTG
+GCGTAGAGGC
+ATTGCAATTT
+AAAAGGTCTC
+TTGCGCTGCC
+AGTAAGGTCC
+CAACGAAGAC
+TAGCCCGATC
+TCTGCATTCA
+AGAGTGACTT
+GTCGGTACCG
+GCTTAATTAC
+AGAGCCGGTC
+TCCATTCGAG
+ATGAGCATTC
+ACATGCGGGG
+ATGCTGAGAG
+GTTACCAGCG
+TGGGGGGCGG
+GCTAGCTGAG
+TGACTAGCAA
+TGTACTCACA
+CATATCGCAA
+GTAGGGAAGC
+ACCTCCTCCT
+TTGTTCGTCA
+CGGACGTGTC
+TAAGGGTAAT
+GGCAAGTGCT
+TCGATCGCTC
+AATTTTCGTA
+TATTTACCAC
+ACAAATAAGG
+TATACCCCTC
+GCCAACAATA
+ACCTGAATAG
+CGGAGCGCTC
+CGGTCTCCGC
+AATGAATCCT
+GGTCACAAAA
+CGATGCGGCA
+ATTGGGGCTA
+ATGGGATCCC
+GCATACCGCC
+ATTCCTCTCC
+CCTTACTTAG
+TATTGTGCTG
+AATACGACAT
+ATAGGCATTA
+AGGCACTCGT
+CTATAATGAG
+TCCAGTCCCA
+GCCTTCACGG
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ l[K
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ ls
+[0m[01;32mbasilisk.dat[0m  [01;32mminotaur.dat[0m  [01;32municorn.dat[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ cd..
+cd..: command not found
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/creatures[00m$ cd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd molecules/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ ls
+[0m[01;32mall.pdb[0m     [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmiddle.sh[0m   [01;32mpentane.pdb[0m  [01;32msorted-lengths.txt[0m  [01;32mtestfile02.txt[0m
+[01;32mcubane.pdb[0m  [01;32mlength.txt[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpropane.pdb[0m  [01;32mtestfile01.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ for data[K[K[K[Kfilename in *. pdb
+> do
+> ls $filename
+> done
+[0m[01;32mall.pdb[0m
+[0m[01;32mcubane.pdb[0m
+[0m[01;32methane.pdb[0m
+[0m[01;32mmethane.pdb[0m
+[0m[01;32moctane.pdb[0m
+[0m[01;32mpentane.pdb[0m
+[0m[01;32mpropane.pdb[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ exit
+exit
+
+Script done on 2021-07-29 13:40:13+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 13:40:42+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="23"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/shell-lesson-data/shell-lesson-data/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ ls
+[0m[34;42mcreatures[0m  [34;42mdata[0m  [34;42mmolecules[0m  [34;42mnorth-pacific-gyre[0m  [01;32mnotes.txt[0m  [01;32mpizza.cfg[0m  [34;42mproject[0m  [01;32msolar.pdf[0m  [34;42mwriting[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd molecules/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ ls
+[0m[01;32mall.pdb[0m     [01;32methane.pdb[0m  [01;32mlengths.txt[0m  [01;32mmiddle.sh[0m   [01;32mpentane.pdb[0m  [01;32msorted-lengths.txt[0m  [01;32mtestfile02.txt[0m
+[01;32mcubane.pdb[0m  [01;32mlength.txt[0m  [01;32mmethane.pdb[0m  [01;32moctane.pdb[0m  [01;32mpropane.pdb[0m  [01;32mtestfile01.txt[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ nano middle.sh 
+[?2004h[?1049h[22;0;0t[1;23r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[21;54H(B[0;7m[ Reading... ](B[m[21;53H(B[0;7m[ Read 1 line ](B[m[H(B[0;7m  GNU nano 4.8                                           middle.sh                                                      [1;119H(B[m[22d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[23d(B[0;7m^X(B[m Exit[23;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[21d[2d(B[0;1m[34mhead[35m -n[39m(B[m 15 octane.pdb [32m|[39m(B[m (B[0;1m[34mtail[35m -n[39m(B[m 5[?12l[?25h[?25l[21d[J[23d[?12l[?25h[23;1H[?1049l[23;0;0t[?1l>[?2004l]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ bash middle.sh 
+ATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ ls *.sh
+[0m[01;32mmiddle.sh[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/molecules[00m$ cd ..
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd =[K[K[K[Kla -F
+[0m[01;32m.bash_profile[0m*  [34;42mdata[0m/       [34;42mnorth-pacific-gyre[0m/  [01;32mpizza.cfg[0m*  [01;32msolar.pdf[0m*
+[34;42mcreatures[0m/      [34;42mmolecules[0m/  [01;32mnotes.txt[0m*           [34;42mproject[0m/    [34;42mwriting[0m/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data[00m$ cd writing/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ ls
+[0m[34;42mdata[0m  [01;32mhaiku.txt[0m  [34;42mthesis[0m  [34;42mtools[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ cat haiku.txt 
+The Tao that is seen
+Is not the true Tao, until
+You bring fresh toner.
+
+With searching comes loss
+and the presence of absence:
+"My Thesis" not found.
+
+Yesterday it worked
+Today it is not working
+Software is like that.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ ge[Krep not haiku.txt 
+Is [01;31m[Knot[m[K the true Tao, until
+"My Thesis" [01;31m[Knot[m[K found.
+Today it is [01;31m[Knot[m[K working
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep the haiku.txt 
+Is not [01;31m[Kthe[m[K true Tao, until
+and [01;31m[Kthe[m[K presence of absence:
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep the haiku.txt [C[1P[1@T
+[01;31m[KThe[m[K Tao that is seen
+"My [01;31m[KThe[m[Ksis" not found.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ ge[Krep -w The haiku.txt 
+[01;31m[KThe[m[K Tao that is seen
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep -w "is not" haiku.txt 
+Today it [01;31m[Kis not[m[K working
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ ge[K[Kgrep -w "is not" haiku.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "is not" haiku[1P[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[Cn "is not" haik[1@u[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C
+
+[32m[K10[m[K[36m[K:[m[KToday it [01;31m[Kis not[m[K working
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep -n The haiku.txt 
+[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[32m[K7[m[K[36m[K:[m[K"My [01;31m[KThe[m[Ksis" not found.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep -n The haiku.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -n The haiku.txt [A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C- -n The haiku.t[1@x[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[Cw -n The haiku.[1@t[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C
+
+[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep -w -n The haiku.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-n The haiku.t[1P[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C-n The haiku.tx[1P[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[Cn The haiku.txt[1P [A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C[C The haiku.txt [A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C[C- The haiku.t[1@x[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C[C[Cw The haiku.[1@t[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C[C[C[C
+
+[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep -n -w The haiku.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- The haiku[1@.[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C[C[C[C[Cv The haik[1@u[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C[C[C[C[C[C
+
+grep: invalid option -- '-'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep -n -w-v The haiku.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -v The hai[1@k[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C[C[C[C[C
+
+[32m[K2[m[K[36m[K:[m[KIs not the true Tao, until
+[32m[K3[m[K[36m[K:[m[KYou bring fresh toner.
+[32m[K4[m[K[36m[K:[m[K
+[32m[K5[m[K[36m[K:[m[KWith searching comes loss
+[32m[K6[m[K[36m[K:[m[Kand the presence of absence:
+[32m[K7[m[K[36m[K:[m[K"My Thesis" not found.
+[32m[K8[m[K[36m[K:[m[K
+[32m[K9[m[K[36m[K:[m[KYesterday it worked
+[32m[K10[m[K[36m[K:[m[KToday it is not working
+[32m[K11[m[K[36m[K:[m[KSoftware is like that.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ ls
+[0m[34;42mdata[0m  [01;32mhaiku.txt[0m  [34;42mthesis[0m  [34;42mtools[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep-r Yesterday
+grep-r: command not found
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep-r Yesterday[1@ 
+[35m[Kdata/LittleWomen.txt[m[K[36m[K:[m[K"[01;31m[KYesterday[m[K, when Aunt was asleep and I was trying to be as still as a
+[35m[Kdata/LittleWomen.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K at dinner, when an Austrian officer stared at us and then
+[35m[Kdata/LittleWomen.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K was a quiet day spent in teaching, sewing, and writing in my
+[35m[Khaiku.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K it worked
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ ger[K[Krep --help
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Search for PATTERNS in each FILE.
+Example: grep -i 'hello world' menu.h main.c
+PATTERNS can contain multiple patterns separated by newlines.
+
+Pattern selection and interpretation:
+  -E, --extended-regexp     PATTERNS are extended regular expressions
+  -F, --fixed-strings       PATTERNS are strings
+  -G, --basic-regexp        PATTERNS are basic regular expressions
+  -P, --perl-regexp         PATTERNS are Perl regular expressions
+  -e, --regexp=PATTERNS     use PATTERNS for matching
+  -f, --file=FILE           take PATTERNS from FILE
+  -i, --ignore-case         ignore case distinctions in patterns and data
+      --no-ignore-case      do not ignore case distinctions (default)
+  -w, --word-regexp         match only whole words
+  -x, --line-regexp         match only whole lines
+  -z, --null-data           a data line ends in 0 byte, not newline
+
+Miscellaneous:
+  -s, --no-messages         suppress error messages
+  -v, --invert-match        select non-matching lines
+  -V, --version             display version information and exit
+      --help                display this help text and exit
+
+Output control:
+  -m, --max-count=NUM       stop after NUM selected lines
+  -b, --byte-offset         print the byte offset with output lines
+  -n, --line-number         print line number with output lines
+      --line-buffered       flush output on every line
+  -H, --with-filename       print file name with output lines
+  -h, --no-filename         suppress the file name prefix on output
+      --label=LABEL         use LABEL as the standard input file name prefix
+  -o, --only-matching       show only nonempty parts of lines that match
+  -q, --quiet, --silent     suppress all normal output
+      --binary-files=TYPE   assume that binary files are TYPE;
+                            TYPE is 'binary', 'text', or 'without-match'
+  -a, --text                equivalent to --binary-files=text
+  -I                        equivalent to --binary-files=without-match
+  -d, --directories=ACTION  how to handle directories;
+                            ACTION is 'read', 'recurse', or 'skip'
+  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;
+                            ACTION is 'read' or 'skip'
+  -r, --recursive           like --directories=recurse
+  -R, --dereference-recursive  likewise, but follow all symlinks
+      --include=GLOB        search only files that match GLOB (a file pattern)
+      --exclude=GLOB        skip files that match GLOB
+      --exclude-from=FILE   skip files that match any file pattern from FILE
+      --exclude-dir=GLOB    skip directories that match GLOB
+  -L, --files-without-match  print only names of FILEs with no selected lines
+  -l, --files-with-matches  print only names of FILEs with selected lines
+  -c, --count               print only a count of selected lines per FILE
+  -T, --initial-tab         make tabs line up (if needed)
+  -Z, --null                print 0 byte after FILE name
+
+Context control:
+  -B, --before-context=NUM  print NUM lines of leading context
+  -A, --after-context=NUM   print NUM lines of trailing context
+  -C, --context=NUM         print NUM lines of output context
+  -NUM                      same as --context=NUM
+      --color[=WHEN],
+      --colour[=WHEN]       use markers to highlight the matching strings;
+                            WHEN is 'always', 'never', or 'auto'
+  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)
+
+When FILE is '-', read standard input.  With no FILE, read '.' if
+recursive, '-' otherwise.  With fewer than two FILEs, assume -h.
+Exit status is 0 if any line (or file if -L) is selected, 1 otherwise;
+if any error occurs and -q is not given, the exit status is 2.
+
+Report bugs to: bug-grep@gnu.org
+GNU grep home page: <http://www.gnu.org/software/grep/>
+General help using GNU software: <https://www.gnu.org/gethelp/>
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep -E ""."o"[C haiku.txt 
+The T[01;31m[Kao[m[K that is seen
+Is [01;31m[Kno[m[Kt the true T[01;31m[Kao[m[K, until
+[01;31m[KYo[m[Ku bring fresh [01;31m[Kto[m[Kner.
+With searching [01;31m[Kco[m[Kmes [01;31m[Klo[m[Kss
+and the presence[01;31m[K o[m[Kf absence:
+"My Thesis" [01;31m[Kno[m[Kt [01;31m[Kfo[m[Kund.
+Yesterday it [01;31m[Kwo[m[Krked
+[01;31m[KTo[m[Kday it is [01;31m[Kno[m[Kt [01;31m[Kwo[m[Krking
+[01;31m[KSo[m[Kftware is like that.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ grep -E ".o" haiku.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^.o" haiku.t[1@x[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ [C[C[C[C[C[C[C[C[C[C
+
+[01;31m[KYo[m[Ku bring fresh toner.
+[01;31m[KTo[m[Kday it is not working
+[01;31m[KSo[m[Kftware is like that.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ fing [K[Kd .
+.
+./data
+./data/LittleWomen.txt
+./data/one.txt
+./data/two.txt
+./haiku.txt
+./thesis
+./thesis/empty-draft.md
+./tools
+./tools/format
+./tools/old
+./tools/old/oldtool
+./tools/stats
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ ls
+[0m[34;42mdata[0m  [01;32mhaiku.txt[0m  [34;42mthesis[0m  [34;42mtools[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ wc -l $(find . -name  ""*"."t"x"t"[C)
+  21022 ./data/LittleWomen.txt
+     70 ./data/one.txt
+    300 ./data/two.txt
+     11 ./haiku.txt
+  21403 total
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ wc -l $(find . -name "*.txt") |sort
+     11 ./haiku.txt
+     70 ./data/one.txt
+    300 ./data/two.txt
+  21022 ./data/LittleWomen.txt
+  21403 total
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ wc -l $(find . -name "*.txt") |sort sort[C[C[C[C-n
+sort-n: command not found
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ wc -l $(find . -name "*.txt") | sort-n[C -n
+     11 ./haiku.txt
+     70 ./data/one.txt
+    300 ./data/two.txt
+  21022 ./data/LittleWomen.txt
+  21403 total
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/shell-lesson-data/shell-lesson-data/writing[00m$ exit
+exit
+
+Script done on 2021-07-29 13:57:28+05:30 [COMMAND_EXIT_CODE="0"]
