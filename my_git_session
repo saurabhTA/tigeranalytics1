@@ -1,0 +1,1734 @@
+Script started on 2021-07-29 14:31:57+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="21"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git --version
+git version 2.32.0
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ exit
+exit
+
+Script done on 2021-07-29 14:32:07+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 14:32:39+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="21"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git config --list --show-origin
+[?1h=file:/home/saurabh/.gitconfig   user.name=saurabhTA[m
+file:/home/saurabh/.gitconfig   user.email=saurabh.gupta@tigeranalytics.com[m
+file:/home/saurabh/.gitconfig   core.editor=code --wait[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git config --list
+[?1h=user.name=saurabhTA[m
+user.email=saurabh.gupta@tigeranalytics.com[m
+core.editor=code --wait[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git help --con[K[K[K[K[K[K[K[K[K[K[K[Kt config --help
+[?1049h[22;0;0t[?1h=GIT-CONFIG(1)                                         Git Manual                                        GIT-CONFIG(1)[m
+[m
+[1mNAME[0m[m
+       git-config - Get and set repository or global options[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--fixed-value] [--show-origin] [--show-scope] [-z|--null] name [value[m  [value-pattern]][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] --add name value[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--fixed-value] --replace-all name value [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get name [m [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get-all n[m ame [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] [--name-onl[m y] --get-regexp name_regex [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [-z|--null] --get-urlmatch name URL[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--fixed-value] --unset name [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--fixed-value] --unset-all name [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --rename-section old_name new_name[m
+[7m Manual page git-config(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git config --help[C[K[K[K[K[Kh
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git help config
+[?1049h[22;0;0t[?1h=GIT-CONFIG(1)                                         Git Manual                                        GIT-CONFIG(1)[m
+[m
+[1mNAME[0m[m
+       git-config - Get and set repository or global options[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--fixed-value] [--show-origin] [--show-scope] [-z|--null] name [value[m  [value-pattern]][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] --add name value[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--fixed-value] --replace-all name value [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get name [m [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get-all n[m ame [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] [--name-onl[m y] --get-regexp name_regex [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--type=<type>] [-z|--null] --get-urlmatch name URL[m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--fixed-value] --unset name [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] [--fixed-value] --unset-all name [value-pattern][m
+       [4mgit[24m [4mconfig[24m [<file-option>] --rename-section old_name new_name[m
+[7m Manual page git-config(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git add -h[K--help
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git add ---help[1Phelp
+[?1049h[22;0;0t[?1h=GIT-ADD(1)                                            Git Manual                                           GIT-ADD(1)[m
+[m
+[1mNAME[0m[m
+       git-add - Add file contents to the index[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4madd[24m [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p][m
+                 [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]][m
+                 [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing] [--renormalize][m
+                 [--chmod=(+|-)x] [--pathspec-from-file=<file> [--pathspec-file-nul]][m
+                 [--] [<pathspec>...][m
+[m
+[1mDESCRIPTION[0m[m
+       This command updates the index using the current content found in the working tree, to prepare the content[m
+       staged for the next commit. It typically adds the current content of existing paths as a whole, but with some[m
+       options it can also be used to add content with only part of the changes made to the working tree files[m
+       applied, or remove paths that do not exist in the working tree anymore.[m
+[m
+       The "index" holds a snapshot of the content of the working tree, and it is this snapshot that is taken as the[m
+       contents of the next commit. Thus after making any changes to the working tree, and before running the commit[m
+[7m Manual page git-add(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page git-add(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git add --help[C[K[K[K[K[K[K-h
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd
+]0;saurabh@TIGERTEMP12: ~[01;32msaurabh@TIGERTEMP12[00m:[01;34m~[00m$ ls
+[0m[01;34mmy_demo_project[0m  my_git_session  [01;34mmy_new_ubuntu[0m  my_unix_session
+]0;saurabh@TIGERTEMP12: ~[01;32msaurabh@TIGERTEMP12[00m:[01;34m~[00m$ cd -
+/mnt/c/Users/saurabh.gupta
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ ls[K[Kgit --vr[Kersion
+git version 2.32.0
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git clone https://github.com/libgit2/libgit2[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on 2021-07-29 14:49:06+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 14:58:57+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="21"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/git_files/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files[00m$ git clone https://github.com/libgit2/libgit2
+Cloning into 'libgit2'...
+remote: Enumerating objects: 109564, done.[K
+remote: Counting objects:   0% (1/109564)[Kremote: Counting objects:   1% (1096/109564)[Kremote: Counting objects:   2% (2192/109564)[Kremote: Counting objects:   3% (3287/109564)[Kremote: Counting objects:   4% (4383/109564)[Kremote: Counting objects:   5% (5479/109564)[Kremote: Counting objects:   6% (6574/109564)[Kremote: Counting objects:   7% (7670/109564)[Kremote: Counting objects:   8% (8766/109564)[Kremote: Counting objects:   9% (9861/109564)[Kremote: Counting objects:  10% (10957/109564)[Kremote: Counting objects:  11% (12053/109564)[Kremote: Counting objects:  12% (13148/109564)[Kremote: Counting objects:  13% (14244/109564)[Kremote: Counting objects:  14% (15339/109564)[Kremote: Counting objects:  15% (16435/109564)[Kremote: Counting objects:  16% (17531/109564)[Kremote: Counting objects:  17% (18626/109564)[Kremote: Counting objects:  18% (19722/109564)[Kremote: Counting objects:  19% (20818/109564)[Kremote: Counting objects:  20% (21913/109564)[Kremote: Counting objects:  21% (23009/109564)[Kremote: Counting objects:  22% (24105/109564)[Kremote: Counting objects:  23% (25200/109564)[Kremote: Counting objects:  24% (26296/109564)[Kremote: Counting objects:  25% (27391/109564)[Kremote: Counting objects:  26% (28487/109564)[Kremote: Counting objects:  27% (29583/109564)[Kremote: Counting objects:  28% (30678/109564)[Kremote: Counting objects:  29% (31774/109564)[Kremote: Counting objects:  30% (32870/109564)[Kremote: Counting objects:  31% (33965/109564)[Kremote: Counting objects:  32% (35061/109564)[Kremote: Counting objects:  33% (36157/109564)[Kremote: Counting objects:  34% (37252/109564)[Kremote: Counting objects:  35% (38348/109564)[Kremote: Counting objects:  36% (39444/109564)[Kremote: Counting objects:  37% (40539/109564)[Kremote: Counting objects:  38% (41635/109564)[Kremote: Counting objects:  39% (42730/109564)[Kremote: Counting objects:  40% (43826/109564)[Kremote: Counting objects:  41% (44922/109564)[Kremote: Counting objects:  42% (46017/109564)[Kremote: Counting objects:  43% (47113/109564)[Kremote: Counting objects:  44% (48209/109564)[Kremote: Counting objects:  45% (49304/109564)[Kremote: Counting objects:  46% (50400/109564)[Kremote: Counting objects:  47% (51496/109564)[Kremote: Counting objects:  48% (52591/109564)[Kremote: Counting objects:  49% (53687/109564)[Kremote: Counting objects:  50% (54782/109564)[Kremote: Counting objects:  51% (55878/109564)[Kremote: Counting objects:  52% (56974/109564)[Kremote: Counting objects:  53% (58069/109564)[Kremote: Counting objects:  54% (59165/109564)[Kremote: Counting objects:  55% (60261/109564)[Kremote: Counting objects:  56% (61356/109564)[Kremote: Counting objects:  57% (62452/109564)[Kremote: Counting objects:  58% (63548/109564)[Kremote: Counting objects:  59% (64643/109564)[Kremote: Counting objects:  60% (65739/109564)[Kremote: Counting objects:  61% (66835/109564)[Kremote: Counting objects:  62% (67930/109564)[Kremote: Counting objects:  63% (69026/109564)[Kremote: Counting objects:  64% (70121/109564)[Kremote: Counting objects:  65% (71217/109564)[Kremote: Counting objects:  66% (72313/109564)[Kremote: Counting objects:  67% (73408/109564)[Kremote: Counting objects:  68% (74504/109564)[Kremote: Counting objects:  69% (75600/109564)[Kremote: Counting objects:  70% (76695/109564)[Kremote: Counting objects:  71% (77791/109564)[Kremote: Counting objects:  72% (78887/109564)[Kremote: Counting objects:  73% (79982/109564)[Kremote: Counting objects:  74% (81078/109564)[Kremote: Counting objects:  75% (82173/109564)[Kremote: Counting objects:  76% (83269/109564)[Kremote: Counting objects:  77% (84365/109564)[Kremote: Counting objects:  78% (85460/109564)[Kremote: Counting objects:  79% (86556/109564)[Kremote: Counting objects:  80% (87652/109564)[Kremote: Counting objects:  81% (88747/109564)[Kremote: Counting objects:  82% (89843/109564)[Kremote: Counting objects:  83% (90939/109564)[Kremote: Counting objects:  84% (92034/109564)[Kremote: Counting objects:  85% (93130/109564)[Kremote: Counting objects:  86% (94226/109564)[Kremote: Counting objects:  87% (95321/109564)[Kremote: Counting objects:  88% (96417/109564)[Kremote: Counting objects:  89% (97512/109564)[Kremote: Counting objects:  90% (98608/109564)[Kremote: Counting objects:  91% (99704/109564)[Kremote: Counting objects:  92% (100799/109564)[Kremote: Counting objects:  93% (101895/109564)[Kremote: Counting objects:  94% (102991/109564)[Kremote: Counting objects:  95% (104086/109564)[Kremote: Counting objects:  96% (105182/109564)[Kremote: Counting objects:  97% (106278/109564)[Kremote: Counting objects:  98% (107373/109564)[Kremote: Counting objects:  99% (108469/109564)[Kremote: Counting objects: 100% (109564/109564)[Kremote: Counting objects: 100% (109564/109564), done.[K
+remote: Compressing objects:   0% (1/30745)[Kremote: Compressing objects:   1% (308/30745)[Kremote: Compressing objects:   2% (615/30745)[Kremote: Compressing objects:   3% (923/30745)[Kremote: Compressing objects:   4% (1230/30745)[Kremote: Compressing objects:   5% (1538/30745)[Kremote: Compressing objects:   6% (1845/30745)[Kremote: Compressing objects:   7% (2153/30745)[Kremote: Compressing objects:   8% (2460/30745)[Kremote: Compressing objects:   9% (2768/30745)[Kremote: Compressing objects:  10% (3075/30745)[Kremote: Compressing objects:  11% (3382/30745)[Kremote: Compressing objects:  12% (3690/30745)[Kremote: Compressing objects:  13% (3997/30745)[Kremote: Compressing objects:  14% (4305/30745)[Kremote: Compressing objects:  15% (4612/30745)[Kremote: Compressing objects:  16% (4920/30745)[Kremote: Compressing objects:  17% (5227/30745)[Kremote: Compressing objects:  18% (5535/30745)[Kremote: Compressing objects:  19% (5842/30745)[Kremote: Compressing objects:  20% (6149/30745)[Kremote: Compressing objects:  21% (6457/30745)[Kremote: Compressing objects:  22% (6764/30745)[Kremote: Compressing objects:  23% (7072/30745)[Kremote: Compressing objects:  24% (7379/30745)[Kremote: Compressing objects:  25% (7687/30745)[Kremote: Compressing objects:  26% (7994/30745)[Kremote: Compressing objects:  27% (8302/30745)[Kremote: Compressing objects:  28% (8609/30745)[Kremote: Compressing objects:  29% (8917/30745)[Kremote: Compressing objects:  30% (9224/30745)[Kremote: Compressing objects:  31% (9531/30745)[Kremote: Compressing objects:  32% (9839/30745)[Kremote: Compressing objects:  33% (10146/30745)[Kremote: Compressing objects:  34% (10454/30745)[Kremote: Compressing objects:  35% (10761/30745)[Kremote: Compressing objects:  36% (11069/30745)[Kremote: Compressing objects:  37% (11376/30745)[Kremote: Compressing objects:  38% (11684/30745)[Kremote: Compressing objects:  39% (11991/30745)[Kremote: Compressing objects:  40% (12298/30745)[Kremote: Compressing objects:  41% (12606/30745)[Kremote: Compressing objects:  42% (12913/30745)[Kremote: Compressing objects:  43% (13221/30745)[Kremote: Compressing objects:  44% (13528/30745)[Kremote: Compressing objects:  45% (13836/30745)[Kremote: Compressing objects:  46% (14143/30745)[Kremote: Compressing objects:  47% (14451/30745)[Kremote: Compressing objects:  48% (14758/30745)[Kremote: Compressing objects:  49% (15066/30745)[Kremote: Compressing objects:  50% (15373/30745)[Kremote: Compressing objects:  51% (15680/30745)[Kremote: Compressing objects:  52% (15988/30745)[Kremote: Compressing objects:  53% (16295/30745)[Kremote: Compressing objects:  54% (16603/30745)[Kremote: Compressing objects:  55% (16910/30745)[Kremote: Compressing objects:  56% (17218/30745)[Kremote: Compressing objects:  57% (17525/30745)[Kremote: Compressing objects:  58% (17833/30745)[Kremote: Compressing objects:  59% (18140/30745)[Kremote: Compressing objects:  60% (18447/30745)[Kremote: Compressing objects:  61% (18755/30745)[Kremote: Compressing objects:  62% (19062/30745)[Kremote: Compressing objects:  63% (19370/30745)[Kremote: Compressing objects:  64% (19677/30745)[Kremote: Compressing objects:  65% (19985/30745)[Kremote: Compressing objects:  66% (20292/30745)[Kremote: Compressing objects:  67% (20600/30745)[Kremote: Compressing objects:  68% (20907/30745)[Kremote: Compressing objects:  69% (21215/30745)[Kremote: Compressing objects:  70% (21522/30745)[Kremote: Compressing objects:  71% (21829/30745)[Kremote: Compressing objects:  72% (22137/30745)[Kremote: Compressing objects:  73% (22444/30745)[Kremote: Compressing objects:  74% (22752/30745)[Kremote: Compressing objects:  75% (23059/30745)[Kremote: Compressing objects:  76% (23367/30745)[Kremote: Compressing objects:  77% (23674/30745)[Kremote: Compressing objects:  78% (23982/30745)[Kremote: Compressing objects:  79% (24289/30745)[Kremote: Compressing objects:  80% (24596/30745)[Kremote: Compressing objects:  81% (24904/30745)[Kremote: Compressing objects:  82% (25211/30745)[Kremote: Compressing objects:  83% (25519/30745)[Kremote: Compressing objects:  84% (25826/30745)[Kremote: Compressing objects:  85% (26134/30745)[Kremote: Compressing objects:  86% (26441/30745)[Kremote: Compressing objects:  87% (26749/30745)[Kremote: Compressing objects:  88% (27056/30745)[Kremote: Compressing objects:  89% (27364/30745)[Kremote: Compressing objects:  90% (27671/30745)[Kremote: Compressing objects:  91% (27978/30745)[Kremote: Compressing objects:  92% (28286/30745)[Kremote: Compressing objects:  93% (28593/30745)[Kremote: Compressing objects:  94% (28901/30745)[Kremote: Compressing objects:  95% (29208/30745)[Kremote: Compressing objects:  96% (29516/30745)[Kremote: Compressing objects:  97% (29823/30745)[Kremote: Compressing objects:  98% (30131/30745)[Kremote: Compressing objects:  99% (30438/30745)[Kremote: Compressing objects: 100% (30745/30745)[Kremote: Compressing objects: 100% (30745/30745), done.[K
+Receiving objects:   0% (1/109564)Receiving objects:   1% (1096/109564)Receiving objects:   2% (2192/109564), 732.00 KiB | 1.41 MiB/sReceiving objects:   3% (3287/109564), 732.00 KiB | 1.41 MiB/sReceiving objects:   3% (3845/109564), 1.38 MiB | 1.36 MiB/s  Receiving objects:   4% (4383/109564), 1.38 MiB | 1.36 MiB/sReceiving objects:   5% (5479/109564), 1.38 MiB | 1.36 MiB/sReceiving objects:   6% (6574/109564), 2.09 MiB | 1.38 MiB/sReceiving objects:   7% (7670/109564), 2.09 MiB | 1.38 MiB/sReceiving objects:   8% (8766/109564), 2.09 MiB | 1.38 MiB/sReceiving objects:   9% (9861/109564), 2.09 MiB | 1.38 MiB/sReceiving objects:  10% (10957/109564), 2.09 MiB | 1.38 MiB/sReceiving objects:  10% (11283/109564), 2.09 MiB | 1.38 MiB/sReceiving objects:  11% (12053/109564), 3.36 MiB | 1.67 MiB/sReceiving objects:  12% (13148/109564), 3.36 MiB | 1.67 MiB/sReceiving objects:  13% (14244/109564), 3.36 MiB | 1.67 MiB/sReceiving objects:  14% (15339/109564), 3.36 MiB | 1.67 MiB/sReceiving objects:  15% (16435/109564), 3.36 MiB | 1.67 MiB/sReceiving objects:  16% (17531/109564), 3.36 MiB | 1.67 MiB/sReceiving objects:  17% (18626/109564), 4.68 MiB | 1.86 MiB/sReceiving objects:  18% (19722/109564), 4.68 MiB | 1.86 MiB/sReceiving objects:  19% (20818/109564), 4.68 MiB | 1.86 MiB/sReceiving objects:  20% (21913/109564), 4.68 MiB | 1.86 MiB/sReceiving objects:  21% (23009/109564), 4.68 MiB | 1.86 MiB/sReceiving objects:  22% (24105/109564), 4.68 MiB | 1.86 MiB/sReceiving objects:  22% (24272/109564), 4.68 MiB | 1.86 MiB/sReceiving objects:  23% (25200/109564), 6.41 MiB | 2.13 MiB/sReceiving objects:  23% (25400/109564), 8.07 MiB | 2.30 MiB/sReceiving objects:  23% (26054/109564), 12.06 MiB | 2.67 MiB/sReceiving objects:  24% (26296/109564), 13.79 MiB | 2.90 MiB/sReceiving objects:  25% (27391/109564), 13.79 MiB | 2.90 MiB/sReceiving objects:  26% (28487/109564), 15.65 MiB | 3.16 MiB/sReceiving objects:  27% (29583/109564), 15.65 MiB | 3.16 MiB/sReceiving objects:  27% (30033/109564), 15.65 MiB | 3.16 MiB/sReceiving objects:  28% (30678/109564), 17.57 MiB | 3.43 MiB/sReceiving objects:  29% (31774/109564), 17.57 MiB | 3.43 MiB/sReceiving objects:  30% (32870/109564), 19.65 MiB | 3.61 MiB/sReceiving objects:  31% (33965/109564), 19.65 MiB | 3.61 MiB/sReceiving objects:  31% (34871/109564), 19.65 MiB | 3.61 MiB/sReceiving objects:  32% (35061/109564), 19.65 MiB | 3.61 MiB/sReceiving objects:  33% (36157/109564), 21.64 MiB | 3.76 MiB/sReceiving objects:  34% (37252/109564), 21.64 MiB | 3.76 MiB/sReceiving objects:  35% (38348/109564), 23.44 MiB | 3.77 MiB/sReceiving objects:  36% (39444/109564), 23.44 MiB | 3.77 MiB/sReceiving objects:  36% (39895/109564), 23.44 MiB | 3.77 MiB/sReceiving objects:  37% (40539/109564), 25.54 MiB | 3.87 MiB/sReceiving objects:  38% (41635/109564), 25.54 MiB | 3.87 MiB/sReceiving objects:  39% (42730/109564), 27.75 MiB | 3.92 MiB/sReceiving objects:  40% (43826/109564), 27.75 MiB | 3.92 MiB/sReceiving objects:  41% (44922/109564), 27.75 MiB | 3.92 MiB/sReceiving objects:  42% (46017/109564), 27.75 MiB | 3.92 MiB/sReceiving objects:  42% (46735/109564), 27.75 MiB | 3.92 MiB/sReceiving objects:  43% (47113/109564), 29.81 MiB | 3.94 MiB/sReceiving objects:  44% (48209/109564), 29.81 MiB | 3.94 MiB/sReceiving objects:  45% (49304/109564), 29.81 MiB | 3.94 MiB/sReceiving objects:  46% (50400/109564), 31.73 MiB | 3.98 MiB/sReceiving objects:  47% (51496/109564), 31.73 MiB | 3.98 MiB/sReceiving objects:  48% (52591/109564), 31.73 MiB | 3.98 MiB/sReceiving objects:  49% (53687/109564), 31.73 MiB | 3.98 MiB/sReceiving objects:  50% (54782/109564), 31.73 MiB | 3.98 MiB/sReceiving objects:  51% (55878/109564), 31.73 MiB | 3.98 MiB/sReceiving objects:  51% (56956/109564), 31.73 MiB | 3.98 MiB/sReceiving objects:  52% (56974/109564), 31.73 MiB | 3.98 MiB/sReceiving objects:  53% (58069/109564), 33.80 MiB | 4.00 MiB/sReceiving objects:  54% (59165/109564), 33.80 MiB | 4.00 MiB/sReceiving objects:  55% (60261/109564), 33.80 MiB | 4.00 MiB/sReceiving objects:  56% (61356/109564), 33.80 MiB | 4.00 MiB/sReceiving objects:  57% (62452/109564), 33.80 MiB | 4.00 MiB/sReceiving objects:  58% (63548/109564), 33.80 MiB | 4.00 MiB/sReceiving objects:  59% (64643/109564), 33.80 MiB | 4.00 MiB/sReceiving objects:  60% (65739/109564), 33.80 MiB | 4.00 MiB/sReceiving objects:  60% (66238/109564), 35.99 MiB | 4.06 MiB/sReceiving objects:  60% (66320/109564), 40.12 MiB | 3.80 MiB/sReceiving objects:  61% (66835/109564), 40.12 MiB | 3.80 MiB/sReceiving objects:  62% (67930/109564), 40.12 MiB | 3.80 MiB/sReceiving objects:  63% (69026/109564), 40.12 MiB | 3.80 MiB/sReceiving objects:  64% (70121/109564), 40.12 MiB | 3.80 MiB/sReceiving objects:  65% (71217/109564), 44.10 MiB | 4.24 MiB/sReceiving objects:  66% (72313/109564), 44.10 MiB | 4.24 MiB/sReceiving objects:  67% (73408/109564), 44.10 MiB | 4.24 MiB/sReceiving objects:  68% (74504/109564), 44.10 MiB | 4.24 MiB/sReceiving objects:  69% (75600/109564), 44.10 MiB | 4.24 MiB/sReceiving objects:  70% (76695/109564), 44.10 MiB | 4.24 MiB/sReceiving objects:  71% (77791/109564), 46.42 MiB | 4.28 MiB/sReceiving objects:  71% (78434/109564), 46.42 MiB | 4.28 MiB/sReceiving objects:  72% (78887/109564), 46.42 MiB | 4.28 MiB/sReceiving objects:  73% (79982/109564), 46.42 MiB | 4.28 MiB/sReceiving objects:  74% (81078/109564), 46.42 MiB | 4.28 MiB/sReceiving objects:  75% (82173/109564), 46.42 MiB | 4.28 MiB/sReceiving objects:  76% (83269/109564), 46.42 MiB | 4.28 MiB/sReceiving objects:  77% (84365/109564), 46.42 MiB | 4.28 MiB/sReceiving objects:  78% (85460/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  79% (86556/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  80% (87652/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  81% (88747/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  82% (89843/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  83% (90939/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  84% (92034/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  85% (93130/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  86% (94226/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  87% (95321/109564), 48.85 MiB | 4.33 MiB/sReceiving objects:  88% (96417/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  88% (97259/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  89% (97512/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  90% (98608/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  91% (99704/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  92% (100799/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  93% (101895/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  94% (102991/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  95% (104086/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  96% (105182/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  97% (106278/109564), 51.23 MiB | 4.39 MiB/sReceiving objects:  98% (107373/109564), 53.25 MiB | 4.42 MiB/sReceiving objects:  99% (108469/109564), 53.25 MiB | 4.42 MiB/sremote: Total 109564 (delta 77483), reused 108857 (delta 76868), pack-reused 0[K
+Receiving objects: 100% (109564/109564), 53.25 MiB | 4.42 MiB/sReceiving objects: 100% (109564/109564), 54.41 MiB | 3.71 MiB/s, done.
+Resolving deltas:   0% (0/77483)Resolving deltas:   1% (775/77483)Resolving deltas:   2% (1550/77483)Resolving deltas:   3% (2325/77483)Resolving deltas:   4% (3100/77483)Resolving deltas:   5% (3875/77483)Resolving deltas:   6% (4649/77483)Resolving deltas:   7% (5424/77483)Resolving deltas:   8% (6199/77483)Resolving deltas:   9% (6974/77483)Resolving deltas:  10% (7749/77483)Resolving deltas:  11% (8524/77483)Resolving deltas:  12% (9298/77483)Resolving deltas:  13% (10073/77483)Resolving deltas:  14% (10848/77483)Resolving deltas:  15% (11623/77483)Resolving deltas:  16% (12398/77483)Resolving deltas:  17% (13173/77483)Resolving deltas:  18% (13947/77483)Resolving deltas:  19% (14722/77483)Resolving deltas:  20% (15497/77483)Resolving deltas:  21% (16272/77483)Resolving deltas:  22% (17047/77483)Resolving deltas:  23% (17822/77483)Resolving deltas:  24% (18596/77483)Resolving deltas:  25% (19371/77483)Resolving deltas:  26% (20146/77483)Resolving deltas:  27% (20921/77483)Resolving deltas:  28% (21696/77483)Resolving deltas:  29% (22471/77483)Resolving deltas:  30% (23245/77483)Resolving deltas:  31% (24020/77483)Resolving deltas:  32% (24795/77483)Resolving deltas:  33% (25570/77483)Resolving deltas:  34% (26345/77483)Resolving deltas:  35% (27120/77483)Resolving deltas:  36% (27894/77483)Resolving deltas:  37% (28669/77483)Resolving deltas:  38% (29444/77483)Resolving deltas:  39% (30219/77483)Resolving deltas:  40% (30994/77483)Resolving deltas:  41% (31769/77483)Resolving deltas:  42% (32543/77483)Resolving deltas:  43% (33318/77483)Resolving deltas:  44% (34093/77483)Resolving deltas:  45% (34868/77483)Resolving deltas:  46% (35643/77483)Resolving deltas:  47% (36418/77483)Resolving deltas:  48% (37192/77483)Resolving deltas:  49% (37967/77483)Resolving deltas:  50% (38742/77483)Resolving deltas:  51% (39517/77483)Resolving deltas:  51% (40183/77483)Resolving deltas:  52% (40292/77483)Resolving deltas:  52% (40807/77483)Resolving deltas:  53% (41066/77483)Resolving deltas:  54% (41841/77483)Resolving deltas:  55% (42616/77483)Resolving deltas:  56% (43391/77483)Resolving deltas:  57% (44166/77483)Resolving deltas:  58% (44941/77483)Resolving deltas:  59% (45715/77483)Resolving deltas:  60% (46490/77483)Resolving deltas:  61% (47265/77483)Resolving deltas:  62% (48040/77483)Resolving deltas:  63% (48815/77483)Resolving deltas:  64% (49590/77483)Resolving deltas:  65% (50364/77483)Resolving deltas:  66% (51139/77483)Resolving deltas:  67% (51914/77483)Resolving deltas:  67% (52055/77483)Resolving deltas:  68% (52689/77483)Resolving deltas:  69% (53464/77483)Resolving deltas:  70% (54239/77483)Resolving deltas:  71% (55013/77483)Resolving deltas:  72% (55788/77483)Resolving deltas:  73% (56563/77483)Resolving deltas:  74% (57338/77483)Resolving deltas:  75% (58113/77483)Resolving deltas:  76% (58888/77483)Resolving deltas:  77% (59662/77483)Resolving deltas:  78% (60437/77483)Resolving deltas:  79% (61212/77483)Resolving deltas:  80% (61987/77483)Resolving deltas:  81% (62762/77483)Resolving deltas:  82% (63537/77483)Resolving deltas:  83% (64311/77483)Resolving deltas:  84% (65086/77483)Resolving deltas:  85% (65861/77483)Resolving deltas:  86% (66636/77483)Resolving deltas:  87% (67411/77483)Resolving deltas:  88% (68186/77483)Resolving deltas:  89% (68960/77483)Resolving deltas:  89% (69074/77483)Resolving deltas:  90% (69735/77483)Resolving deltas:  91% (70510/77483)Resolving deltas:  92% (71285/77483)Resolving deltas:  93% (72060/77483)Resolving deltas:  94% (72835/77483)Resolving deltas:  95% (73609/77483)Resolving deltas:  96% (74384/77483)Resolving deltas:  97% (75159/77483)Resolving deltas:  98% (75934/77483)Resolving deltas:  99% (76709/77483)Resolving deltas: 100% (77483/77483)Resolving deltas: 100% (77483/77483), done.
+Updating files:   2% (229/11359)Updating files:   3% (341/11359)Updating files:   4% (455/11359)Updating files:   4% (457/11359)Updating files:   5% (568/11359)Updating files:   6% (682/11359)Updating files:   6% (750/11359)Updating files:   7% (796/11359)Updating files:   8% (909/11359)Updating files:   9% (1023/11359)Updating files:   9% (1026/11359)Updating files:  10% (1136/11359)Updating files:  11% (1250/11359)Updating files:  11% (1275/11359)Updating files:  12% (1364/11359)Updating files:  13% (1477/11359)Updating files:  13% (1489/11359)Updating files:  14% (1591/11359)Updating files:  15% (1704/11359)Updating files:  15% (1741/11359)Updating files:  16% (1818/11359)Updating files:  17% (1932/11359)Updating files:  17% (2001/11359)Updating files:  18% (2045/11359)Updating files:  19% (2159/11359)Updating files:  19% (2241/11359)Updating files:  20% (2272/11359)Updating files:  21% (2386/11359)Updating files:  21% (2482/11359)Updating files:  22% (2499/11359)Updating files:  23% (2613/11359)Updating files:  23% (2666/11359)Updating files:  24% (2727/11359)Updating files:  25% (2840/11359)Updating files:  25% (2843/11359)Updating files:  26% (2954/11359)Updating files:  27% (3067/11359)Updating files:  27% (3160/11359)Updating files:  28% (3181/11359)Updating files:  29% (3295/11359)Updating files:  30% (3408/11359)Updating files:  30% (3511/11359)Updating files:  31% (3522/11359)Updating files:  32% (3635/11359)Updating files:  33% (3749/11359)Updating files:  33% (3817/11359)Updating files:  34% (3863/11359)Updating files:  35% (3976/11359)Updating files:  35% (4076/11359)Updating files:  36% (4090/11359)Updating files:  37% (4203/11359)Updating files:  38% (4317/11359)Updating files:  38% (4389/11359)Updating files:  39% (4431/11359)Updating files:  40% (4544/11359)Updating files:  41% (4658/11359)Updating files:  41% (4720/11359)Updating files:  42% (4771/11359)Updating files:  43% (4885/11359)Updating files:  43% (4940/11359)Updating files:  44% (4998/11359)Updating files:  44% (5092/11359)Updating files:  45% (5112/11359)Updating files:  46% (5226/11359)Updating files:  47% (5339/11359)Updating files:  47% (5380/11359)Updating files:  48% (5453/11359)Updating files:  49% (5566/11359)Updating files:  50% (5680/11359)Updating files:  50% (5685/11359)Updating files:  51% (5794/11359)Updating files:  52% (5907/11359)Updating files:  52% (5936/11359)Updating files:  53% (6021/11359)Updating files:  54% (6134/11359)Updating files:  55% (6248/11359)Updating files:  55% (6281/11359)Updating files:  56% (6362/11359)Updating files:  57% (6475/11359)Updating files:  58% (6589/11359)Updating files:  58% (6614/11359)Updating files:  59% (6702/11359)Updating files:  59% (6802/11359)Updating files:  60% (6816/11359)Updating files:  61% (6929/11359)Updating files:  62% (7043/11359)Updating files:  62% (7148/11359)Updating files:  63% (7157/11359)Updating files:  64% (7270/11359)Updating files:  65% (7384/11359)Updating files:  66% (7497/11359)Updating files:  66% (7539/11359)Updating files:  67% (7611/11359)Updating files:  68% (7725/11359)Updating files:  69% (7838/11359)Updating files:  69% (7880/11359)Updating files:  70% (7952/11359)Updating files:  71% (8065/11359)Updating files:  71% (8154/11359)Updating files:  72% (8179/11359)Updating files:  73% (8293/11359)Updating files:  73% (8369/11359)Updating files:  74% (8406/11359)Updating files:  75% (8520/11359)Updating files:  75% (8616/11359)Updating files:  76% (8633/11359)Updating files:  77% (8747/11359)Updating files:  77% (8774/11359)Updating files:  78% (8861/11359)Updating files:  78% (8970/11359)Updating files:  79% (8974/11359)Updating files:  80% (9088/11359)Updating files:  81% (9201/11359)Updating files:  81% (9238/11359)Updating files:  82% (9315/11359)Updating files:  83% (9428/11359)Updating files:  83% (9465/11359)Updating files:  84% (9542/11359)Updating files:  84% (9566/11359)Updating files:  85% (9656/11359)Updating files:  85% (9717/11359)Updating files:  86% (9769/11359)Updating files:  87% (9883/11359)Updating files:  87% (9897/11359)Updating files:  88% (9996/11359)Updating files:  88% (10081/11359)Updating files:  89% (10110/11359)Updating files:  90% (10224/11359)Updating files:  90% (10226/11359)Updating files:  91% (10337/11359)Updating files:  91% (10393/11359)Updating files:  92% (10451/11359)Updating files:  93% (10564/11359)Updating files:  93% (10586/11359)Updating files:  94% (10678/11359)Updating files:  94% (10756/11359)Updating files:  95% (10792/11359)Updating files:  96% (10905/11359)Updating files:  96% (10917/11359)Updating files:  97% (11019/11359)Updating files:  97% (11076/11359)Updating files:  98% (11132/11359)Updating files:  98% (11244/11359)Updating files:  99% (11246/11359)Updating files: 100% (11359/11359)Updating files: 100% (11359/11359), done.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files[00m$ ls
+[0m[34;42mlibgit2[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files[00m$ cd libgit2/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [34;42mdeps[0m  [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdocs[0m  [34;42mfuzzers[0m   [34;42minclude[0m          [34;42mscript[0m        [34;42mtests[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls -l-a
+ls: invalid option -- '-'
+Try 'ls --help' for more information.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls -a
+[0m[34;42m.[0m        [01;32m.editorconfig[0m   [34;42m.github[0m     [01;32mAUTHORS[0m         [01;32mREADME.md[0m     [34;42mci[0m     [34;42mdocs[0m      [01;32mgit.git-authors[0m  [34;42mscript[0m
+[34;42m..[0m       [34;42m.git[0m            [01;32m.gitignore[0m  [01;32mCMakeLists.txt[0m  [01;32mSECURITY.md[0m   [34;42mcmake[0m  [34;42mexamples[0m  [34;42minclude[0m          [34;42msrc[0m
+[01;32m.HEADER[0m  [01;32m.gitattributes[0m  [01;32m.mailmap[0m    [01;32mCOPYING[0m         [01;32mapi.docurium[0m  [34;42mdeps[0m   [34;42mfuzzers[0m   [01;32mpackage.json[0m     [34;42mtests[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [34;42mdeps[0m  [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdocs[0m  [34;42mfuzzers[0m   [34;42minclude[0m          [34;42mscript[0m        [34;42mtests[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add REABME[K[K[KDME
+fatal: pathspec 'README' did not match any files
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add README.md
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat[K[K[Kcode README.md
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+Refresh index: 100% (11359/11359)Refresh index: 100% (11359/11359), done.
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [34;42mdeps[0m  [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdocs[0m  [34;42mfuzzers[0m   [34;42minclude[0m          [34;42mscript[0m        [34;42mtests[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ echo ""m"t"[1P"y" "c"o"d"e"[C README> README[1@ [C
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m  [01;32mREADME.md[0m    [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME[0m   [01;32mSECURITY.md[0m  [34;42mci[0m            [34;42mdeps[0m   [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code README
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mREADME[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add README
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m  [01;32mREADME.md[0m    [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME[0m   [01;32mSECURITY.md[0m  [34;42mci[0m            [34;42mdeps[0m   [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ touch contribut.mde.md[C[C[C
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m  [01;32mREADME.md[0m    [01;32mapi.docurium[0m  [34;42mcmake[0m          [34;42mdeps[0m  [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME[0m   [01;32mSECURITY.md[0m  [34;42mci[0m            [01;32mcontribute.md[0m  [34;42mdocs[0m  [34;42mfuzzers[0m   [34;42minclude[0m          [34;42mscript[0m        [34;42mtests[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mcontribute.md[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add contribute.md tests/tt[K[K[K[K[K[K[K[K[K
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add contribute.md[11Pstatus
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contribute.md[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+Refresh index: 100% (11361/11361)Refresh index: 100% (11361/11361), done.
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contribute.md[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   contribute.md[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contribute.md[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status[K[K[Ktus -s
+[32mA[m  README
+[32mA[m  contribute.md
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls -a
+[0m[34;42m.[0m              [34;42m.git[0m            [01;32m.mailmap[0m        [01;32mREADME[0m        [34;42mci[0m             [34;42mdocs[0m             [34;42minclude[0m       [34;42mtests[0m
+[34;42m..[0m             [01;32m.gitattributes[0m  [01;32mAUTHORS[0m         [01;32mREADME.md[0m     [34;42mcmake[0m          [34;42mexamples[0m         [01;32mpackage.json[0m
+[01;32m.HEADER[0m        [34;42m.github[0m         [01;32mCMakeLists.txt[0m  [01;32mSECURITY.md[0m   [01;32mcontribute.md[0m  [34;42mfuzzers[0m          [34;42mscript[0m
+[01;32m.editorconfig[0m  [01;32m.gitignore[0m      [01;32mCOPYING[0m         [01;32mapi.docurium[0m  [34;42mdeps[0m           [01;32mgit.git-authors[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ exit
+exit
+
+Script done on 2021-07-29 15:54:42+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 15:55:16+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="21"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd[K[Kcd Desktop/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ ls
+[0m[01;32m'Git Bash.lnk'[0m   [34;42mTiger[0m   [01;32mdesktop.ini[0m   [34;42mgit_files[0m   [34;42mshell-lesson-data[0m   [01;32mshell-lesson-data.zip[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ cd git_files/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files[00m$ ls
+[0m[34;42mlibgit2[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files[00m$ cd libgit2/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m  [01;32mREADME.md[0m    [01;32mapi.docurium[0m  [34;42mcmake[0m          [34;42mdeps[0m  [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME[0m   [01;32mSECURITY.md[0m  [34;42mci[0m            [01;32mcontribute.md[0m  [34;42mdocs[0m  [34;42mfuzzers[0m   [34;42minclude[0m          [34;42mscript[0m        [34;42mtests[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+Refresh index: 100% (11361/11361)Refresh index: 100% (11361/11361), done.
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contribute.md[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   contribute.md[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git diff
+[?1h=warning: CRLF will be replaced by LF in contribute.md.[m
+The file will have its original line endings in your working directory[m
+[1mdiff --git a/contribute.md b/contribute.md[m[m
+[1mindex 809fb70d6..7d5728c90 100644[m[m
+[1m--- a/contribute.md[m[m
+[1m+++ b/contribute.md[m[m
+[36m@@ -1 +1,2 @@[m[m
+[31m-This is a demo a file just to learn git.[m[m
+\ No newline at end of file[m[m
+[32m+[m[32mThis is a demo a file just to learn git.[m[m
+[32m+[m[32mThis is another line.[m[m
+\ No newline at end of file[m[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ gitt [K[K diff --staged
+[?1h=[1mdiff --git a/README b/README[m[m
+[1mnew file mode 100644[m[m
+[1mindex 000000000..53eb0141a[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/README[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mmy code[m[m
+[1mdiff --git a/contribute.md b/contribute.md[m[m
+[1mnew file mode 100644[m[m
+[1mindex 000000000..809fb70d6[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/contribute.md[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mThis is a demo a file just to learn git.[m[m
+\ No newline at end of file[m[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add contribute.md 
+warning: CRLF will be replaced by LF in contribute.md.
+The file will have its original line endings in your working directory
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add contribute.md [5Pdiff --staged
+[?1h=[1mdiff --git a/README b/README[m[m
+[1mnew file mode 100644[m[m
+[1mindex 000000000..53eb0141a[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/README[m[m
+[36m@@ -0,0 +1 @@[m[m
+[32m+[m[32mmy code[m[m
+[1mdiff --git a/contribute.md b/contribute.md[m[m
+[1mnew file mode 100644[m[m
+[1mindex 000000000..7d5728c90[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/contribute.md[m[m
+[36m@@ -0,0 +1,2 @@[m[m
+[32m+[m[32mThis is a demo a file just to learn git.[m[m
+[32m+[m[32mThis is another line.[m[m
+\ No newline at end of file[m[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m  [01;32mREADME.md[0m    [01;32mapi.docurium[0m  [34;42mcmake[0m          [34;42mdeps[0m  [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME[0m   [01;32mSECURITY.md[0m  [34;42mci[0m            [01;32mcontribute.md[0m  [34;42mdocs[0m  [34;42mfuzzers[0m   [34;42minclude[0m          [34;42mscript[0m        [34;42mtests[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat contribute.md 
+This is a demo a file just to learn git.
+This is another line.]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat README
+my code
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add contribute.md 
+warning: CRLF will be replaced by LF in contribute.md.
+The file will have its original line endings in your working directory
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat contribute.md 
+This is a demo a file just to learn git.
+This is another line.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contribute.md[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit
+hint: Waiting for your editor to close the file... [KAborting commit due to empty commit message.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   README[m
+	[32mnew file:   contribute.md[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git statuscommit
+hint: Waiting for your editor to close the file... [KAborting commit due to empty commit message.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit
+hint: Waiting for your editor to close the file... [KAborting commit due to empty commit message.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit
+hint: Waiting for your editor to close the file... [KAborting commit due to empty commit message.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit
+hint: Waiting for your editor to close the file... [KAborting commit due to empty commit message.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ gi[K[Kgit config --global core.editor emacs
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git config --list
+[?1h=user.name=saurabhTA[m
+user.email=saurabh.gupta@tigeranalytics.com[m
+core.editor=emacs[m
+core.repositoryformatversion=0[m
+core.filemode=false[m
+core.bare=false[m
+core.logallrefupdates=true[m
+core.ignorecase=true[m
+remote.origin.url=https://github.com/libgit2/libgit2[m
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*[m
+branch.main.remote=origin[m
+branch.main.merge=refs/heads/main[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git config --global core.editor "code --wait"
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git config --global core.editor "code --wait"list[K
+[?1h=user.name=saurabhTA[m
+user.email=saurabh.gupta@tigeranalytics.com[m
+core.editor=code --wait[m
+core.repositoryformatversion=0[m
+core.filemode=false[m
+core.bare=false[m
+core.logallrefupdates=true[m
+core.ignorecase=true[m
+remote.origin.url=https://github.com/libgit2/libgit2[m
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*[m
+branch.main.remote=origin[m
+branch.main.merge=refs/heads/main[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code[K[K[K[Kgit commit
+hint: Waiting for your editor to close the file... [KAborting commit due to empty commit message.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit
+hint: Waiting for your editor to close the file... Installing VS Code Server for x64 (c3f126316369cd610563c75b1b1725e0679adfb3)
+Downloading:       0%  0%  0%  0%  0%  0%  0%  0%  0%  1%  1%  1%  1%  1%  1%  1%  1%  1%  2%  2%  2%  2%  2%  2%  2%  2%  2%  3%  3%  3%  3%  3%  3%  3%  3%  3%  4%  4%  4%  4%  4%  4%  4%  4%  4%  5%  5%  5%  5%  5%  5%  5%  5%  5%  6%  6%  6%  6%  6%  6%  6%  6%  6%  7%  7%  7%  7%  7%  7%  7%  7%  7%  7%  8%  8%  8%  8%  8%  8%  8%  8%  8%  9%  9%  9%  9%  9%  9%  9%  9%  9% 10% 10% 10% 10% 10% 10% 10% 10% 10% 11% 11% 11% 11% 11% 11% 11% 11% 11% 12% 12% 12% 12% 12% 12% 12% 12% 12% 13% 13% 13% 13% 13% 13% 13% 13% 13% 14% 14% 14% 14% 14% 14% 14% 14% 14% 14% 15% 15% 15% 15% 15% 15% 15% 15% 15% 16% 16% 16% 16% 16% 16% 16% 16% 16% 17% 17% 17% 17% 17% 17% 17% 17% 17% 18% 18% 18% 18% 18% 18% 18% 18% 18% 19% 19% 19% 19% 19% 19% 19% 19% 19% 20% 20% 20% 20% 20% 20% 20% 20% 20% 21% 21% 21% 21% 21% 21% 21% 21% 21% 22% 22% 22% 22% 22% 22% 22% 22% 22% 22% 23% 23% 23% 23% 23% 23% 23% 23% 23% 24% 24% 24% 24% 24% 24% 24% 24% 24% 25% 25% 25% 25% 25% 25% 25% 25% 25% 26% 26% 26% 26% 26% 26% 26% 26% 26% 27% 27% 27% 27% 27% 27% 27% 27% 27% 28% 28% 28% 28% 28% 28% 28% 28% 28% 29% 29% 29% 29% 29% 29% 29% 29% 29% 29% 30% 30% 30% 30% 30% 30% 30% 30% 30% 31% 31% 31% 31% 31% 31% 31% 31% 31% 32% 32% 32% 32% 32% 32% 32% 32% 32% 33% 33% 33% 33% 33% 33% 33% 33% 33% 34% 34% 34% 34% 34% 34% 34% 34% 34% 35% 35% 35% 35% 35% 35% 35% 35% 35% 36% 36% 36% 36% 36% 36% 36% 36% 36% 37% 37% 37% 37% 37% 37% 37% 37% 37% 37% 38% 38% 38% 38% 38% 38% 38% 38% 38% 39% 39% 39% 39% 39% 39% 39% 39% 39% 40% 40% 40% 40% 40% 40% 40% 40% 40% 41% 41% 41% 41% 41% 41% 41% 41% 41% 42% 42% 42% 42% 42% 42% 42% 42% 42% 43% 43% 43% 43% 43% 43% 43% 43% 43% 44% 44% 44% 44% 44% 44% 44% 44% 44% 44% 45% 45% 45% 45% 45% 45% 45% 45% 45% 46% 46% 46% 46% 46% 46% 46% 46% 46% 47% 47% 47% 47% 47% 47% 47% 47% 47% 48% 48% 48% 48% 48% 48% 48% 48% 48% 49% 49% 49% 49% 49% 49% 49% 49% 49% 50% 50% 50% 50% 50% 50% 50% 50% 50% 51% 51% 51% 51% 51% 51% 51% 51% 51% 52% 52% 52% 52% 52% 52% 52% 52% 52% 52% 53% 53% 53% 53% 53% 53% 53% 53% 53% 54% 54% 54% 54% 54% 54% 54% 54% 54% 55% 55% 55% 55% 55% 55% 55% 55% 55% 56% 56% 56% 56% 56% 56% 56% 56% 56% 57% 57% 57% 57% 57% 57% 57% 57% 57% 58% 58% 58% 58% 58% 58% 58% 58% 58% 59% 59% 59% 59% 59% 59% 59% 59% 59% 59% 60% 60% 60% 60% 60% 60% 60% 60% 60% 61% 61% 61% 61% 61% 61% 61% 61% 61% 62% 62% 62% 62% 62% 62% 62% 62% 62% 63% 63% 63% 63% 63% 63% 63% 63% 63% 64% 64% 64% 64% 64% 64% 64% 64% 64% 65% 65% 65% 65% 65% 65% 65% 65% 65% 66% 66% 66% 66% 66% 66% 66% 66% 66% 67% 67% 67% 67% 67% 67% 67% 67% 67% 67% 68% 68% 68% 68% 68% 68% 68% 68% 68%q 69% 69% 69% 69% 69% 69% 69% 69% 69% 70% 70% 70%q 70% 70% 70% 70% 70% 70% 71% 71% 71% 71% 71% 71% 71% 71% 71% 72% 72% 72% 72% 72% 72%q 72% 72% 72% 73% 73% 73% 73% 73% 73% 73% 73% 73% 74% 74% 74% 74%q 74% 74% 74% 74% 74% 74% 75% 75% 75% 75% 75% 75%q 75% 75% 75% 76% 76% 76% 76% 76%q 76% 76% 76% 76% 77% 77% 77%q 77% 77% 77% 77% 77% 77% 78% 78% 78% 78% 78% 78% 78% 78% 78% 79% 79% 79% 79% 79% 79% 79%q 79% 79% 80% 80% 80% 80% 80% 80% 80% 80% 80% 81% 81% 81% 81% 81% 81% 81% 81% 81% 82% 82% 82% 82% 82% 82% 82% 82% 82% 82% 83% 83% 83% 83% 83% 83% 83% 83% 83% 84% 84% 84% 84% 84% 84% 84% 84% 84% 85% 85% 85% 85% 85% 85% 85% 85% 85% 86% 86% 86% 86% 86% 86% 86% 86% 86% 87% 87% 87% 87% 87% 87% 87% 87% 87% 88% 88% 88% 88% 88% 88% 88% 88% 88% 89% 89% 89% 89% 89% 89% 89% 89% 89% 89% 90% 90% 90% 90% 90% 90% 90% 90% 90% 91% 91% 91% 91% 91% 91% 91% 91% 91% 92% 92% 92% 92% 92% 92% 92% 92% 92% 93% 93% 93% 93% 93% 93% 93% 93% 93% 94% 94% 94% 94% 94% 94% 94% 94% 94% 95% 95% 95% 95% 95% 95% 95% 95% 95% 96% 96% 96% 96% 96% 96% 96% 96% 96% 97% 97% 97% 97% 97% 97% 97% 97% 97% 97% 98% 98% 98% 98% 98% 98% 98% 98% 98% 99% 99% 99% 99% 99% 99% 99% 99% 99%100%100%
+Unpacking:   0%  1%  2%  3%  4%  5%  6%  7%  8%  9% 10% 11% 12% 13% 14% 15% 16% 17% 18% 19% 20% 21% 22% 23% 24% 25% 26% 27% 28% 29% 30% 31% 32% 33% 34% 35% 36% 37% 38% 39% 40% 41% 42% 43% 44% 45% 46% 47% 48% 49% 50% 51% 52% 53% 54% 55% 56% 57% 58% 59% 60% 61% 62% 63% 64% 65% 66% 67% 68% 69% 70% 71% 72% 73% 74% 75% 76% 77% 78% 79% 80% 81% 82% 83% 84% 85% 86% 87% 88% 89% 90% 91% 92% 93% 94% 95% 96% 97% 98% 99%100%
+Unpacked 2041 files and folders to /home/saurabh/.vscode-server/bin/c3f126316369cd610563c75b1b1725e0679adfb3.
+[K[main ff2d9bf53] This is my first commit
+ 2 files changed, 3 insertions(+)
+ create mode 100644 README
+ create mode 100644 contribute.md
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ qqqqqqqq[K[K[K[K[K[K[K[Kcode[K[K[Kls
+
+Command 'cls' not found, but there are 17 similar ones.
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m  [01;32mREADME.md[0m    [01;32mapi.docurium[0m  [34;42mcmake[0m          [34;42mdeps[0m  [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME[0m   [01;32mSECURITY.md[0m  [34;42mci[0m            [01;32mcontribute.md[0m  [34;42mdocs[0m  [34;42mfuzzers[0m   [34;42minclude[0m          [34;42mscript[0m        [34;42mtests[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code README
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ exit
+exit
+
+Script done on 2021-07-29 16:36:17+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-07-29 16:40:25+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="21"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ ls
+[0m[01;32m'Git Bash.lnk'[0m   [34;42mTiger[0m   [01;32mdesktop.ini[0m   [34;42mgit_files[0m   [34;42mshell-lesson-data[0m   [01;32mshell-lesson-data.zip[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop[00m$ cd git_files/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files[00m$ cd libgit2/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m  [01;32mREADME.md[0m    [01;32mapi.docurium[0m  [34;42mcmake[0m          [34;42mdeps[0m  [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME[0m   [01;32mSECURITY.md[0m  [34;42mci[0m            [01;32mcontribute.md[0m  [34;42mdocs[0m  [34;42mfuzzers[0m   [34;42minclude[0m          [34;42mscript[0m        [34;42mtests[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat[K[K[Kcode README
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ rm README
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [01;32mcontribute.md[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdeps[0m           [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+Refresh index: 100% (11361/11361)Refresh index: 100% (11361/11361), done.
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    README[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git rm README
+rm 'README'
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mdeleted:    README[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commiit[K[Kt
+hint: Waiting for your editor to close the file... [K[main be439974c] This is my second commit.
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 README
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls'
+> ^C
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [01;32mcontribute.md[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdeps[0m           [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log
+[?1h=[33mcommit be439974c7212aa7f549f881729ca71f4a92ebe9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:43:00 2021 +0530[m
+[m
+    This is my second commit.[m
+[m
+[33mcommit ff2d9bf530e06dd0dfcb448e2b43c129588be371[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:34:17 2021 +0530[m
+[m
+    This is my first commit[m
+[m
+[33mcommit f313b3834be2dcb60c9dccd118686f0043153a2c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Merge: f08cae109 59af78a48[m
+Author: Edward Thomson <ethomson@edwardthomson.com>[m
+Date:   Wed Jul 28 08:14:08 2021 -0400[m
+[m
+    Merge pull request #5954 from Crayon2000/patch-1[m
+[m
+[33mcommit 59af78a48fac0966e6e26f1ea6323844c69aba48[m[m
+:[K[KAuthor: Crayon <crayon1@rocketmail.com>[m
+:[K[KDate:   Wed Jul 28 01:58:32 2021 -0400[m
+:[K[K[m
+:[K[K    Fix typo in general.c[m
+:[K[K:[K[K[m
+:[K[K[33mcommit f08cae109d9475a29209d444cf312388e7e64d83[m[m
+:[K[K [K^X^X[K^J^J[K:[K[KMerge: 08c79128b 8d453f163[m
+:[K[KAuthor: Edward Thomson <ethomson@edwardthomson.com>[m
+:[K[KDate:   Tue Jul 27 18:59:15 2021 -0400[m
+:[K[K[m
+:[K[K    Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+:[K[K[m
+:[K[K[33mcommit 8d453f16385c04abfba0211f1e7fb1621f26d609[m[m
+:[K[KAuthor: lhchavez <lhchavez@lhchavez.com>[m
+:[K[KDate:   Tue Jul 27 13:00:31 2021 -0700[m
+:[K[K[m
+:[K[K    Swap the order of the `git_graph_reachable_from_any` params[m
+:[K[K    [m
+:[K[K    len, array -> array, len[m
+:[K[K[m
+:[K[K[33mcommit ce5400cdc7cc52ace295a9fbd3cd7a6e7c63be34[m[m
+:[K[KAuthor: lhchavez <lhchavez@lhchavez.com>[m
+:[K[KDate:   Wed Jan 6 06:26:09 2021 -0800[m
+:[K[K[m
+:[K[K    graph: Create `git_graph_reachable_from_any()`[m
+:[K[K    [m
+:[K[K    This change introduces a new API function[m
+:[K[K    `git_graph_reachable_from_any()`, that answers the question whether a[m
+:[K[K    commit is reachable from any of the provided commits through following[m
+:[K[K    parent edges.[m
+:[K[K    [m
+:[K[K    This function can take advantage of optimizations provided by the[m
+:[K[K    existence of a `commit-graph` file, since it makes it faster to know[m
+:[K[K    whether, given two commits X and Y, X cannot possibly be an reachable[m
+:[K[K    from Y.[m
+:[K[K    [m
+:[K[K    Part of: #5757[m
+:[K[K[m
+:[K[K[33mcommit 08c79128be38b6704cfdf01bca037f3fbaabf847[m[m
+:[K[KMerge: 2370e4910 6f544140a[m
+:[K[KAuthor: Edward Thomson <ethomson@edwardthomson.com>[m
+:[K[KDate:   Tue Jul 27 10:18:52 2021 -0400[m
+:[K[K[m
+:[K[K    Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+:[K[K    [m
+:[K[K    commit-graph: Introduce `git_commit_list_generation_cmp`[m
+:[K[K[m
+:[K[K[33mcommit 6f544140a097002fe5f15e43a4d3215c944140b7[m[m
+:[K[KAuthor: lhchavez <lhchavez@lhchavez.com>[m
+:[K[KDate:   Tue Jan 5 19:45:23 2021 -0800[m
+:[K[K[m
+:[K[K    commit-graph: Introduce `git_commit_list_generation_cmp`[m
+:[K[K    [m
+:[K[K    This change makes calculations of merge-bases a bit faster when there[m
+:[K[K    are complex graphs and the commit times cause visiting nodes multiple[m
+:[K[K    times. This is done by visiting the nodes in the graph in reverse[m
+:[K[K    generation order when the generation number is available instead of[m
+:[K[K    commit timestamp. If the generation number is missing in any pair of[m
+:[K[K    commits, it can safely fall back to the old heuristic with no negative[m
+:[K[K    side-effects.[m
+:[K[K    [m
+:[K[K    Part of: #5757[m
+:[K[K[m
+:[K[K[33mcommit 2370e4910262f941a3bb0f70ce05ff7a90679fe1[m[m
+:[K[KMerge: 43b5075df 25b75cd9b[m
+:[K[KAuthor: Edward Thomson <ethomson@edwardthomson.com>[m
+:[K[KDate:   Mon Jul 26 16:27:54 2021 -0400[m
+:[K[K[m
+:[K[K    Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+:[K[K    [m
+:[K[K    commit-graph: Use the commit-graph in revwalks[m
+:[K[K[m
+:[K[K[33mcommit 43b5075df4c543fc8801ed4b829702d7f9f2c0ad[m[m
+:[K[KMerge: c87e47600 54a524524[m
+:[K[KAuthor: Edward Thomson <ethomson@edwardthomson.com>[m
+:[K[KDate:   Thu Jul 22 17:07:56 2021 -0400[m
+:[K[K[m
+:[K[K    Merge pull request #5890 from lolgear/git_submodule_dup[m
+:[K[K    [m
+:[K[K    [Submodule] Git submodule dup[m
+:[K[K[m
+:[K[K[33mcommit c87e4760095ddabab28d90b43d0d30433691e451[m[m
+:[K[KMerge: 5c5c19a6b fe40de40d[m
+:[K[KAuthor: Edward Thomson <ethomson@edwardthomson.com>[m
+:[K[KDate:   Thu Jul 22 16:51:11 2021 -0400[m
+:[K[K[m
+:[K[K    Merge branch 'pr/5948' into main[m
+:[K[K[m
+:[K[K:[K[K:[K[K:[K[K:[K[K:[K[K:[K[K:[K[K[?1l>
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log-[K  -p[K[K[K[K -p -2
+[?1h=[33mcommit be439974c7212aa7f549f881729ca71f4a92ebe9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:43:00 2021 +0530[m
+[m
+    This is my second commit.[m
+[m
+[1mdiff --git a/README b/README[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex 53eb0141a..000000000[m[m
+[1m--- a/README[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1 +0,0 @@[m[m
+[31m-my code[m[m
+[m
+[33mcommit ff2d9bf530e06dd0dfcb448e2b43c129588be371[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:34:17 2021 +0530[m
+[m
+    This is my first commit[m
+[m
+:[K[K[1mdiff --git a/README b/README[m[m
+:[K[K[1mnew file mode 100644[m[m
+:[K[K[1mindex 000000000..53eb0141a[m[m
+:[K[K[1m--- /dev/null[m[m
+:[K[K[1m+++ b/README[m[m
+:[K[K[36m@@ -0,0 +1 @@[m[m
+:[K[K[32m+[m[32mmy code[m[m
+:[K[K[1mdiff --git a/contribute.md b/contribute.md[m[m
+:[K[K[1mnew file mode 100644[m[m
+:[K[K[1mindex 000000000..f59242ad2[m[m
+:[K[K[1m--- /dev/null[m[m
+:[K[K[1m+++ b/contribute.md[m[m
+:[K[K[36m@@ -0,0 +1,2 @@[m[m
+:[K[K[32m+[m[32mThis is a demo a file just to learn git.[m[m
+:[K[K[32m+[m[32mThis is another line.[m[m
+:[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --pretty=oneline
+[?1h=[33mbe439974c7212aa7f549f881729ca71f4a92ebe9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m This is my second commit.[m
+[33mff2d9bf530e06dd0dfcb448e2b43c129588be371[m This is my first commit[m
+[33mf313b3834be2dcb60c9dccd118686f0043153a2c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48fac0966e6e26f1ea6323844c69aba48[m Fix typo in general.c[m
+[33mf08cae109d9475a29209d444cf312388e7e64d83[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f16385c04abfba0211f1e7fb1621f26d609[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc7cc52ace295a9fbd3cd7a6e7c63be34[m graph: Create `git_graph_reachable_from_any()`[m
+[33m08c79128be38b6704cfdf01bca037f3fbaabf847[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a097002fe5f15e43a4d3215c944140b7[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m2370e4910262f941a3bb0f70ce05ff7a90679fe1[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m43b5075df4c543fc8801ed4b829702d7f9f2c0ad[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33mc87e4760095ddabab28d90b43d0d30433691e451[m Merge branch 'pr/5948' into main[m
+[33mfe40de40d864cc7b458a923ac6403d9f62ad4795[m trace: drop unnecessary write indirection[m
+[33m5c5c19a6b9165f09d8c81bc07915ab8bb211e6b7[m Merge pull request #5951 from libgit2/ethomson/strict_alloc[m
+[33mb0980dcfb35fe1c8f783001296b4fea6b7373058[m[33m ([m[1;31morigin/ethomson/strict_alloc[m[33m)[m Update src/allocators/stdalloc.c[m
+[33m688bf4ce38e995d88a8d58b85b648315d5e391be[m Remove macro magic[m
+[33mc69852d6bc254bbbfabb621f740d28f263877a76[m ci: enable strict allocation checking on one node[m
+[33m31e84edb14327050ba74bf213c5b17451cca311e[m merge: don't try to malloc(0)[m
+[33m419ffdde6aa3c4dce60c0ab219d0ca48eaea8f81[m packbuilder: don't try to malloc(0)[m
+[33m48e6b02be9b0639fdc25e17514f11d7ef141dfbc[m alloc: add GIT_DEBUG_STRICT_ALLOC[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ exit
+exit
+
+Script done on 2021-07-29 16:59:52+05:30 [COMMAND_EXIT_CODE="141"]
+Script started on 2021-07-29 17:57:47+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git log-2
+git: 'log-2' is not a git command. See 'git --help'.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git log-2 -2
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git log
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cfd De[K[K[K[K[Kd Desktop/git_files/libgit2/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [01;32mcontribute.md[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdeps[0m           [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ lscd Desktop/git_files/libgit2/git log[K -2
+[?1h=[33mcommit be439974c7212aa7f549f881729ca71f4a92ebe9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:43:00 2021 +0530[m
+[m
+    This is my second commit.[m
+[m
+[33mcommit ff2d9bf530e06dd0dfcb448e2b43c129588be371[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:34:17 2021 +0530[m
+[m
+    This is my first commit[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+Refresh index: 100% (11360/11360)Refresh index: 100% (11360/11360), done.
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   contribute.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git restore contribute.md
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git remote
+origin
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [K]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git remote -v
+origin	https://github.com/libgit2/libgit2 (fetch)
+origin	https://github.com/libgit2/libgit2 (push)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git fetch origin
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [01;32mcontribute.md[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdeps[0m           [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git push origin master
+error: src refspec master does not match any
+[31merror: failed to push some refs to 'https://github.com/libgit2/libgit2'
+[m]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git remote
+origin
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git remote show orgin
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git remote show orginigin
+* remote origin
+  Fetch URL: https://github.com/libgit2/libgit2
+  Push  URL: https://github.com/libgit2/libgit2
+  HEAD branch: main
+  Remote branches:
+    bindings/libgit2sharp/020_2              tracked
+    bindings/libgit2sharp/022_1              tracked
+    brianmario/attr-from-tree                tracked
+    brianmario/revwalk-filter                tracked
+    brianmario/trailer-info                  tracked
+    brianmario/trailer-list                  tracked
+    ci                                       tracked
+    cmn/annotated-from-tag                   tracked
+    cmn/atexit-skeleton                      tracked
+    cmn/cancellation                         tracked
+    cmn/commit-on                            tracked
+    cmn/config-nonewline                     tracked
+    cmn/ctest-jobs                           tracked
+    cmn/delta-base-eviction                  tracked
+    cmn/diff-binary-patch                    tracked
+    cmn/dynamic-libssh2                      tracked
+    cmn/example-pull                         tracked
+    cmn/expose-gitfile-check                 tracked
+    cmn/forbid-mutiurl                       tracked
+    cmn/index-add-conllision-extra           tracked
+    cmn/init-ssh                             tracked
+    cmn/io-stream-backends                   tracked
+    cmn/leaks                                tracked
+    cmn/not-opaque                           tracked
+    cmn/parallel-clar                        tracked
+    cmn/pcre2                                tracked
+    cmn/read-only-size                       tracked
+    cmn/remote-options                       tracked
+    cmn/repo-v1                              tracked
+    cmn/reset-dont-free-url                  tracked
+    cmn/server                               tracked
+    cmn/sortedcache-close                    tracked
+    cmn/strict-object                        tracked
+    cmn/tmp                                  tracked
+    cmn/tree-parser-sort-input               tracked
+    cmn/warnings                             tracked
+    csware/findfiles_win32                   tracked
+    csware/system_proxy                      tracked
+    development                              tracked
+    diff-fails-with-cpp-file                 tracked
+    empty-name                               tracked
+    enterprise/backport-2.6-4136-4178        tracked
+    enterprise/backport-2.7-4136-4178        tracked
+    enterprise/backport-2.8-4136-4178        tracked
+    enterprise/backport-2.9-4136-4178        tracked
+    error-handling                           tracked
+    ethomson/027                             tracked
+    ethomson/1.1.1                           tracked
+    ethomson/attrs_from_commit               tracked
+    ethomson/checkout_conflict_respect_index tracked
+    ethomson/ci_11                           tracked
+    ethomson/cli                             tracked
+    ethomson/custom_url                      tracked
+    ethomson/devcontainer                    tracked
+    ethomson/diff_fail                       tracked
+    ethomson/docs                            tracked
+    ethomson/filter_driver_git_buf           tracked
+    ethomson/init-bak                        tracked
+    ethomson/is_and_from                     tracked
+    ethomson/issue-4203                      tracked
+    ethomson/links                           tracked
+    ethomson/memleak                         tracked
+    ethomson/middleware                      tracked
+    ethomson/nightlies                       tracked
+    ethomson/ntlm                            tracked
+    ethomson/ntlm2                           tracked
+    ethomson/off_t_bak                       tracked
+    ethomson/racy-diff                       tracked
+    ethomson/remote_error                    tracked
+    ethomson/ssl_proxy                       tracked
+    ethomson/stream-truncated-writes         tracked
+    ethomson/strict_alloc                    tracked
+    ethomson/tlsdata_fail                    tracked
+    ethomson/userbuf                         tracked
+    ethomson/util_as_a_directory             tracked
+    ethomson/winauth                         tracked
+    features/push_old                        tracked
+    fileops                                  tracked
+    gh-pages                                 tracked
+    hf/021_patch                             tracked
+    hf/libgit2sharp_020_patch                tracked
+    hf/master_patch                          tracked
+    jss/fix-ignore-pop                       tracked
+    main                                     tracked
+    maint/v0.21                              tracked
+    maint/v0.22                              tracked
+    maint/v0.23                              tracked
+    maint/v0.24                              tracked
+    maint/v0.25                              tracked
+    maint/v0.26                              tracked
+    maint/v0.27                              tracked
+    maint/v0.28                              tracked
+    maint/v0.99                              tracked
+    maint/v1.0                               tracked
+    maint/v1.1                               tracked
+    new-error-handling                       tracked
+    ntk/appveyor_install                     tracked
+    pks-cmake-targets                        tracked
+    pks-config-map-optimization              tracked
+    pks-pcre-8.44                            tracked
+    pks-release-build-warnings               tracked
+    pks/azure-remove-docjob                  tracked
+    pks/coverity-fix-sudo                    tracked
+    pks/ntlmclicent-htonll-generic           tracked
+    pks/small-fixes                          tracked
+    precompose-test                          tracked
+    rb/commit-modified-file                  tracked
+    rb/object-parse-flexibility              tracked
+    rb/test-builtin-drivers                  tracked
+    rb/warnings-for-commit-headers           tracked
+    threading-docs                           tracked
+    threadsafe                               tracked
+    vmg/read-types                           tracked
+    vmg/repo-format-1                        tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (fast-forwardable)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git push origin main
+Username for 'https://github.com': saurabhTA
+Password for 'https://saurabhTA@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/libgit2/libgit2/'
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git push origin main
+Username for 'https://github.com': saurabhTA
+Password for 'https://saurabhTA@github.com': 
+remote: Permission to libgit2/libgit2.git denied to saurabhTA.
+fatal: unable to access 'https://github.com/libgit2/libgit2/': The requested URL returned error: 403
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ exit
+exit
+
+Script done on 2021-07-29 18:45:47+05:30 [COMMAND_EXIT_CODE="128"]
+Script started on 2021-07-29 18:45:57+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="19"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git tag
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git status
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/git_files/libgit2/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git tag
+[?1h=v0.1.0[m
+v0.10.0[m
+v0.11.0[m
+v0.12.0[m
+v0.13.0[m
+v0.14.0[m
+v0.15.0[m
+v0.16.0[m
+v0.17.0[m
+v0.18.0[m
+v0.19.0[m
+v0.2.0[m
+v0.20.0[m
+v0.21.0[m
+v0.21.0-rc1[m
+v0.21.0-rc2[m
+v0.21.1[m
+v0.21.2[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git show
+[?1h=[33mcommit be439974c7212aa7f549f881729ca71f4a92ebe9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:43:00 2021 +0530[m
+[m
+    This is my second commit.[m
+[m
+[1mdiff --git a/README b/README[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex 53eb0141a..000000000[m[m
+[1m--- a/README[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1 +0,0 @@[m[m
+[31m-my code[m[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git tab[Kg -a v1.4 -m "my version 1.4"[C[1P"0"[1P[1@0[C[C[C
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git tag
+[?1h=v0.1.0[m
+v0.10.0[m
+v0.11.0[m
+v0.12.0[m
+v0.13.0[m
+v0.14.0[m
+v0.15.0[m
+v0.16.0[m
+v0.17.0[m
+v0.18.0[m
+v0.19.0[m
+v0.2.0[m
+v0.20.0[m
+v0.21.0[m
+v0.21.0-rc1[m
+v0.21.0-rc2[m
+v0.21.1[m
+v0.21.2[m
+:[K[Kv0.21.3[m
+:[K[Kv0.21.4[m
+:[K[Kv0.21.5[m
+:[K[Kv0.22.0[m
+:[K[Kv0.22.0-rc1[m
+:[K[Kv0.22.0-rc2[m
+:[K[Kv0.22.1[m
+:[K[Kv0.22.2[m
+:[K[Kv0.22.3[m
+:[K[Kv0.23.0[m
+:[K[Kv0.23.0-rc1[m
+:[K[Kv0.23.0-rc2[m
+:[K[Kv0.23.1[m
+:[K[Kv0.23.2[m
+:[K[Kv0.23.3[m
+:[K[Kv0.23.4[m
+:[K[Kv0.24.0[m
+:[K[Kv0.24.0-rc1[m
+:[K[Kv0.24.1[m
+:[K[Kv0.24.2[m
+:[K[Kv0.24.3[m
+:[K[Kv0.24.4[m
+:[K[Kv0.24.5[m
+:[K[Kv0.24.6[m
+:[K[Kv0.25.0[m
+:[K[Kv0.25.0-rc1[m
+:[K[Kv0.25.0-rc2[m
+:[K[Kv0.25.1[m
+:[K[Kv0.26.0[m
+:[K[Kv0.26.0-rc1[m
+:[K[Kv0.26.0-rc2[m
+:[K[Kv0.26.1[m
+:[K[Kv0.26.2[m
+:[K[Kv0.26.3[m
+:[K[Kv0.26.4[m
+:[K[Kv0.26.5[m
+:[K[Kv0.26.6[m
+:[K[Kv0.26.7[m
+:[K[Kv0.26.8[m
+:[K[Kv0.27.0[m
+:[K[Kv0.27.0-rc1[m
+:[K[Kv0.27.0-rc2[m
+:[K[Kv0.27.0-rc3[m
+:[K[Kv0.27.1[m
+:[K[Kv0.27.10[m
+:[K[Kv0.27.2[m
+:[K[Kv0.27.3[m
+:[K[Kv0.27.4[m
+:[K[Kv0.27.5[m
+:[K[Kv0.27.6[m
+:[K[Kv0.27.7[m
+:[K[Kv0.27.8[m
+:[K[Kv0.27.9[m
+:[K[Kv0.28.0[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git show v1.0
+[?1h=[33mtag v1.0[m[m
+Tagger: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 18:50:59 2021 +0530[m
+[m
+my version 1.0[m
+[m
+[33mcommit be439974c7212aa7f549f881729ca71f4a92ebe9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;33mtag: v1.0[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:43:00 2021 +0530[m
+[m
+    This is my second commit.[m
+[m
+[1mdiff --git a/README b/README[m[m
+[1mdeleted file mode 100644[m[m
+[1mindex 53eb0141a..000000000[m[m
+[1m--- a/README[m[m
+[1m+++ /dev/null[m[m
+[36m@@ -1 +0,0 @@[m[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git chechout [C[1P[1@k[C[C[C[Cv1.0
+Note: switching to 'v1.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at be439974c This is my second commit.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log
+[?1h=[33mcommit be439974c7212aa7f549f881729ca71f4a92ebe9[m[33m ([m[1;36mHEAD[m[33m, [m[1;33mtag: v1.0[m[33m, [m[1;32mmain[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:43:00 2021 +0530[m
+[m
+    This is my second commit.[m
+[m
+[33mcommit ff2d9bf530e06dd0dfcb448e2b43c129588be371[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:34:17 2021 +0530[m
+[m
+    This is my first commit[m
+[m
+[33mcommit f313b3834be2dcb60c9dccd118686f0043153a2c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Merge: f08cae109 59af78a48[m
+Author: Edward Thomson <ethomson@edwardthomson.com>[m
+Date:   Wed Jul 28 08:14:08 2021 -0400[m
+[m
+    Merge pull request #5954 from Crayon2000/patch-1[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --online
+fatal: unrecognized argument: --online
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --onlineeline
+[?1h=[33mbe439974c[m[33m ([m[1;36mHEAD[m[33m, [m[1;33mtag: v1.0[m[33m, [m[1;32mmain[m[33m)[m This is my second commit.[m
+[33mff2d9bf53[m This is my first commit[m
+[33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48[m Fix typo in general.c[m
+[33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m43b5075df[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33mc87e47600[m Merge branch 'pr/5948' into main[m
+[33mfe40de40d[m trace: drop unnecessary write indirection[m
+[33m5c5c19a6b[m Merge pull request #5951 from libgit2/ethomson/strict_alloc[m
+[33mb0980dcfb[m[33m ([m[1;31morigin/ethomson/strict_alloc[m[33m)[m Update src/allocators/stdalloc.c[m
+[33m688bf4ce3[m Remove macro magic[m
+[33mc69852d6b[m ci: enable strict allocation checking on one node[m
+[33m31e84edb1[m merge: don't try to malloc(0)[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --oneline --decorate
+[?1h=[33mbe439974c[m[33m ([m[1;36mHEAD[m[33m, [m[1;33mtag: v1.0[m[33m, [m[1;32mmain[m[33m)[m This is my second commit.[m
+[33mff2d9bf53[m This is my first commit[m
+[33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48[m Fix typo in general.c[m
+[33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m43b5075df[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33mc87e47600[m Merge branch 'pr/5948' into main[m
+[33mfe40de40d[m trace: drop unnecessary write indirection[m
+[33m5c5c19a6b[m Merge pull request #5951 from libgit2/ethomson/strict_alloc[m
+[33mb0980dcfb[m[33m ([m[1;31morigin/ethomson/strict_alloc[m[33m)[m Update src/allocators/stdalloc.c[m
+[33m688bf4ce3[m Remove macro magic[m
+[33mc69852d6b[m ci: enable strict allocation checking on one node[m
+[33m31e84edb1[m merge: don't try to malloc(0)[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git branck[Kh testing
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git [K[K[K[Kgit log --onelo[Kine
+[?1h=[33mbe439974c[m[33m ([m[1;36mHEAD[m[33m, [m[1;33mtag: v1.0[m[33m, [m[1;32mtesting[m[33m, [m[1;32mmain[m[33m)[m This is my second commit.[m
+[33mff2d9bf53[m This is my first commit[m
+[33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48[m Fix typo in general.c[m
+[33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m43b5075df[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33mc87e47600[m Merge branch 'pr/5948' into main[m
+[33mfe40de40d[m trace: drop unnecessary write indirection[m
+[33m5c5c19a6b[m Merge pull request #5951 from libgit2/ethomson/strict_alloc[m
+[33mb0980dcfb[m[33m ([m[1;31morigin/ethomson/strict_alloc[m[33m)[m Update src/allocators/stdalloc.c[m
+[33m688bf4ce3[m Remove macro magic[m
+[33mc69852d6b[m ci: enable strict allocation checking on one node[m
+[33m31e84edb1[m merge: don't try to malloc(0)[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git checkout testing
+Switched to branch 'testing'
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --oneline
+[?1h=[33mbe439974c[m[33m ([m[1;36mHEAD -> [m[1;32mtesting[m[33m, [m[1;33mtag: v1.0[m[33m, [m[1;32mmain[m[33m)[m This is my second commit.[m
+[33mff2d9bf53[m This is my first commit[m
+[33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48[m Fix typo in general.c[m
+[33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m43b5075df[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33mc87e47600[m Merge branch 'pr/5948' into main[m
+[33mfe40de40d[m trace: drop unnecessary write indirection[m
+[33m5c5c19a6b[m Merge pull request #5951 from libgit2/ethomson/strict_alloc[m
+[33mb0980dcfb[m[33m ([m[1;31morigin/ethomson/strict_alloc[m[33m)[m Update src/allocators/stdalloc.c[m
+[33m688bf4ce3[m Remove macro magic[m
+[33mc69852d6b[m ci: enable strict allocation checking on one node[m
+[33m31e84edb1[m merge: don't try to malloc(0)[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [01;32mcontribute.md[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdeps[0m           [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit -1 -m[K[K[K[Ka -m "made  a c[K[K[K[Ka change"
+[testing 456fd46e4] made a change
+ 1 file changed, 1 insertion(+)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log -oneline
+fatal: unrecognized argument: -oneline
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log -oneline-oneline
+[?1h=[33m456fd46e4[m[33m ([m[1;36mHEAD -> [m[1;32mtesting[m[33m)[m made a change[m
+[33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m, [m[1;32mmain[m[33m)[m This is my second commit.[m
+[33mff2d9bf53[m This is my first commit[m
+[33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48[m Fix typo in general.c[m
+[33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m43b5075df[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33mc87e47600[m Merge branch 'pr/5948' into main[m
+[33mfe40de40d[m trace: drop unnecessary write indirection[m
+[33m5c5c19a6b[m Merge pull request #5951 from libgit2/ethomson/strict_alloc[m
+[33mb0980dcfb[m[33m ([m[1;31morigin/ethomson/strict_alloc[m[33m)[m Update src/allocators/stdalloc.c[m
+[33m688bf4ce3[m Remove macro magic[m
+[33mc69852d6b[m ci: enable strict allocation checking on one node[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --oneline --all
+[?1h=[33m456fd46e4[m[33m ([m[1;36mHEAD -> [m[1;32mtesting[m[33m)[m made a change[m
+[33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m, [m[1;32mmain[m[33m)[m This is my second commit.[m
+[33mff2d9bf53[m This is my first commit[m
+[33m560363ffe[m[33m ([m[1;31morigin/gh-pages[m[33m)[m generated docs[m
+[33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48[m Fix typo in general.c[m
+[33me5f039580[m generated docs[m
+[33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[33m20fc03f8a[m generated docs[m
+[33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m210c5f2d3[m generated docs[m
+[33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m6c1dddd0b[m generated docs[m
+[33m43b5075df[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33m01af7b68f[m generated docs[m
+:[K[K:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log
+[?1h=[33mcommit 456fd46e42d726958ecd15c1fd86c08f33a49fad[m[33m ([m[1;36mHEAD -> [m[1;32mtesting[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 19:48:52 2021 +0530[m
+[m
+    made a change[m
+[m
+[33mcommit be439974c7212aa7f549f881729ca71f4a92ebe9[m[33m ([m[1;33mtag: v1.0[m[33m, [m[1;32mmain[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:43:00 2021 +0530[m
+[m
+    This is my second commit.[m
+[m
+[33mcommit ff2d9bf530e06dd0dfcb448e2b43c129588be371[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:34:17 2021 +0530[m
+[m
+    This is my first commit[m
+[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit -a -m ""m"a"d"e" "o"t"h"e"r" "c"h"a"n"g"e"s"
+[main 52af01437] made other changes
+ 1 file changed, 1 insertion(+)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --onelo[Kine --decorate --graph -- [Kall
+[?1h=* [33m52af01437[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m made other changes[m
+[31m|[m * [33m456fd46e4[m[33m ([m[1;32mtesting[m[33m)[m made a change[m
+[31m|[m[31m/[m  [m
+* [33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+* [33mff2d9bf53[m This is my first commit[m
+*   [33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m59af78a48[m Fix typo in general.c[m
+[33m|[m[33m/[m  [m
+*   [33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[35m|[m[36m\[m  [m
+[35m|[m * [33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[35m|[m * [33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[35m|[m[35m/[m  [m
+*   [33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[1;31m|[m[1;32m\[m  [m
+[1;31m|[m * [33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[1;31m|[m[1;31m/[m  [m
+:[K[K*   [33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git branck[Kh[K[K[K[K[K[Klog --oneline
+[?1h=[33m52af01437[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m made other changes[m
+[33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+[33mff2d9bf53[m This is my first commit[m
+[33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48[m Fix typo in general.c[m
+[33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m43b5075df[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33mc87e47600[m Merge branch 'pr/5948' into main[m
+[33mfe40de40d[m trace: drop unnecessary write indirection[m
+[33m5c5c19a6b[m Merge pull request #5951 from libgit2/ethomson/strict_alloc[m
+[33mb0980dcfb[m[33m ([m[1;31morigin/ethomson/strict_alloc[m[33m)[m Update src/allocators/stdalloc.c[m
+[33m688bf4ce3[m Remove macro magic[m
+[33mc69852d6b[m ci: enable strict allocation checking on one node[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git branch hotfix
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ girt [K[K[Kt switch hotfix
+Switched to branch 'hotfix'
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --oneline
+[?1h=[33m52af01437[m[33m ([m[1;36mHEAD -> [m[1;32mhotfix[m[33m, [m[1;32mmain[m[33m)[m made other changes[m
+[33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+[33mff2d9bf53[m This is my first commit[m
+[33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48[m Fix typo in general.c[m
+[33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m43b5075df[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33mc87e47600[m Merge branch 'pr/5948' into main[m
+[33mfe40de40d[m trace: drop unnecessary write indirection[m
+[33m5c5c19a6b[m Merge pull request #5951 from libgit2/ethomson/strict_alloc[m
+[33mb0980dcfb[m[33m ([m[1;31morigin/ethomson/strict_alloc[m[33m)[m Update src/allocators/stdalloc.c[m
+[33m688bf4ce3[m Remove macro magic[m
+[33mc69852d6b[m ci: enable strict allocation checking on one node[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --onelineswitch hotfixbran[C[C[C[C[C[C[C[C[Clog --oneline --decorate --graph --all
+[?1h=* [33m52af01437[m[33m ([m[1;36mHEAD -> [m[1;32mhotfix[m[33m, [m[1;32mmain[m[33m)[m made other changes[m
+[31m|[m * [33m456fd46e4[m[33m ([m[1;32mtesting[m[33m)[m made a change[m
+[31m|[m[31m/[m  [m
+* [33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+* [33mff2d9bf53[m This is my first commit[m
+*   [33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m59af78a48[m Fix typo in general.c[m
+[33m|[m[33m/[m  [m
+*   [33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[35m|[m[36m\[m  [m
+[35m|[m * [33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[35m|[m * [33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[35m|[m[35m/[m  [m
+*   [33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[1;31m|[m[1;32m\[m  [m
+[1;31m|[m * [33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[1;31m|[m[1;31m/[m  [m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ lo[K[Kgit k[Klog
+[?1h=[33mcommit 52af0143770b6b74127abce520b8b1d436372301[m[33m ([m[1;36mHEAD -> [m[1;32mhotfix[m[33m, [m[1;32mmain[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 19:53:24 2021 +0530[m
+[m
+    made other changes[m
+[m
+[33mcommit be439974c7212aa7f549f881729ca71f4a92ebe9[m[33m ([m[1;33mtag: v1.0[m[33m)[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:43:00 2021 +0530[m
+[m
+    This is my second commit.[m
+[m
+[33mcommit ff2d9bf530e06dd0dfcb448e2b43c129588be371[m[m
+Author: saurabhTA <saurabh.gupta@tigeranalytics.com>[m
+Date:   Thu Jul 29 16:34:17 2021 +0530[m
+[m
+    This is my first commit[m
+[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [01;32mcontribute.md[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdeps[0m           [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git[K[K[Kgit log --oneline
+[?1h=[33m52af01437[m[33m ([m[1;36mHEAD -> [m[1;32mhotfix[m[33m, [m[1;32mmain[m[33m)[m made other changes[m
+[33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+[33mff2d9bf53[m This is my first commit[m
+[33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m59af78a48[m Fix typo in general.c[m
+[33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+[33m2370e4910[m Merge pull request #5765 from lhchavez/cgraph-revwalks[m
+[33m43b5075df[m Merge pull request #5890 from lolgear/git_submodule_dup[m
+[33mc87e47600[m Merge branch 'pr/5948' into main[m
+[33mfe40de40d[m trace: drop unnecessary write indirection[m
+[33m5c5c19a6b[m Merge pull request #5951 from libgit2/ethomson/strict_alloc[m
+[33mb0980dcfb[m[33m ([m[1;31morigin/ethomson/strict_alloc[m[33m)[m Update src/allocators/stdalloc.c[m
+[33m688bf4ce3[m Remove macro magic[m
+[33mc69852d6b[m ci: enable strict allocation checking on one node[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+Refresh index: 100% (11360/11360)Refresh index: 100% (11360/11360), done.
+On branch hotfix
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   contribute.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git[K[K[Kgit add contribute.md [12Pstatus
+On branch hotfix
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   contribute.md[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit
+hint: Waiting for your editor to close the file... [K[hotfix eb8d97ad8] commit for hotfix
+ 1 file changed, 2 insertions(+)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git [K[K[K[Kgit commitstatusadd contribute.md [12Pstatuscode contribute.md [2Pgit log --onelinecode contribute.md ls[Kgit log --oneline --decorate --graph --all
+[?1h=* [33meb8d97ad8[m[33m ([m[1;36mHEAD -> [m[1;32mhotfix[m[33m)[m commit for hotfix[m
+* [33m52af01437[m[33m ([m[1;32mmain[m[33m)[m made other changes[m
+[31m|[m * [33m456fd46e4[m[33m ([m[1;32mtesting[m[33m)[m made a change[m
+[31m|[m[31m/[m  [m
+* [33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+* [33mff2d9bf53[m This is my first commit[m
+*   [33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m59af78a48[m Fix typo in general.c[m
+[33m|[m[33m/[m  [m
+*   [33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[35m|[m[36m\[m  [m
+[35m|[m * [33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[35m|[m * [33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[35m|[m[35m/[m  [m
+*   [33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[1;31m|[m[1;32m\[m  [m
+[1;31m|[m * [33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git switch testing[K[K[K[K[K[K[Kmain
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git switch mainlog --oneline --decorate --graph --all
+[?1h=* [33meb8d97ad8[m[33m ([m[1;32mhotfix[m[33m)[m commit for hotfix[m
+* [33m52af01437[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m made other changes[m
+[31m|[m * [33m456fd46e4[m[33m ([m[1;32mtesting[m[33m)[m made a change[m
+[31m|[m[31m/[m  [m
+* [33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+* [33mff2d9bf53[m This is my first commit[m
+*   [33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m59af78a48[m Fix typo in general.c[m
+[33m|[m[33m/[m  [m
+*   [33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[35m|[m[36m\[m  [m
+[35m|[m * [33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[35m|[m * [33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[35m|[m[35m/[m  [m
+*   [33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[1;31m|[m[1;32m\[m  [m
+[1;31m|[m * [33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git merge hotfix
+Updating 52af01437..eb8d97ad8
+Fast-forward
+ contribute.md | 2 [32m++[m
+ 1 file changed, 2 insertions(+)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git[K[K[Kgit merge hotfixlog --oneline --decorate --graph --all
+[?1h=* [33meb8d97ad8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32mhotfix[m[33m)[m commit for hotfix[m
+* [33m52af01437[m made other changes[m
+[31m|[m * [33m456fd46e4[m[33m ([m[1;32mtesting[m[33m)[m made a change[m
+[31m|[m[31m/[m  [m
+* [33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+* [33mff2d9bf53[m This is my first commit[m
+*   [33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m59af78a48[m Fix typo in general.c[m
+[33m|[m[33m/[m  [m
+*   [33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[35m|[m[36m\[m  [m
+[35m|[m * [33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[35m|[m * [33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[35m|[m[35m/[m  [m
+*   [33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[1;31m|[m[1;32m\[m  [m
+[1;31m|[m * [33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ld=s[K[K[Ks
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [01;32mcontribute.md[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdeps[0m           [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat contribute.md 
+This is a demo a file just to learn git.
+This is another line.
+This line is in main branch
+
+this is for hotfix
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git branch -d hotfix
+Deleted branch hotfix (was eb8d97ad8).
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git[K[K[Kgit branch -d hotfix[2Pcat contribute.md ls[Kgit log --oneline --decorate --graph --all
+[?1h=* [33meb8d97ad8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m commit for hotfix[m
+* [33m52af01437[m made other changes[m
+[31m|[m * [33m456fd46e4[m[33m ([m[1;32mtesting[m[33m)[m made a change[m
+[31m|[m[31m/[m  [m
+* [33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+* [33mff2d9bf53[m This is my first commit[m
+*   [33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m59af78a48[m Fix typo in general.c[m
+[33m|[m[33m/[m  [m
+*   [33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[35m|[m[36m\[m  [m
+[35m|[m * [33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[35m|[m * [33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[35m|[m[35m/[m  [m
+*   [33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[1;31m|[m[1;32m\[m  [m
+[1;31m|[m * [33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+:[K[K:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat contribute.md 
+This is a demo a file just to learn git.
+This is another line.
+This line is in main branch
+
+this is for hotfix
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git switch testing 
+Switched to branch 'testing'
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git metr[Krge[K[K[K[Krge testing 
+Auto-merging contribute.md
+CONFLICT (content): Merge conflict in contribute.md
+Automatic merge failed; fix conflicts and then commit the result.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git log --[K[K[K[K[K[K[K[K[K[Kgit merge testing [3Pswitch maintesting [1Pcat contribute.md[Cgit log --oneline --decorate --graph --all
+[?1h=* [33meb8d97ad8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m commit for hotfix[m
+* [33m52af01437[m made other changes[m
+[31m|[m * [33m456fd46e4[m[33m ([m[1;32mtesting[m[33m)[m made a change[m
+[31m|[m[31m/[m  [m
+* [33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+* [33mff2d9bf53[m This is my first commit[m
+*   [33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m59af78a48[m Fix typo in general.c[m
+[33m|[m[33m/[m  [m
+*   [33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[35m|[m[36m\[m  [m
+[35m|[m * [33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[35m|[m * [33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[35m|[m[35m/[m  [m
+*   [33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+[1;31m|[m[1;32m\[m  [m
+[1;31m|[m * [33m6f544140a[m commit-graph: Introduce `git_commit_list_generation_cmp`[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat contribute.md 
+This is a demo a file just to learn git.
+This is another line.
+<<<<<<< HEAD
+This line is in main branch
+
+this is for hotfix
+=======
+adding line to check branching
+>>>>>>> testing
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git switch testing 
+fatal: cannot switch branch while merging
+Consider "git merge --quit" or "git worktree add".
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ code contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	[31mboth modified:   contribute.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat contribute.md 
+This is a demo a file just to learn git.
+This is another line.
+This line is in main branch
+this is for hotfix
+adding line to check branching
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git add contribute.md 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	[32mmodified:   contribute.md[m
+
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit ""F"i"n"a"l" "b"r"a"n"c"h" "a"n"d" "[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"t"e"s"t"i"n"g" "a"n"d" "m"a"i"n" "b"r"n"c"h" "[1P"[1P"[1P"[1P"a"n"c"h" "m"e"r"g"e" "c"o"m" [A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm"i"t"
+fatal: cannot do a partial commit during a merge.
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git commit "testing and main branch merge commit"[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+hint: Waiting for your editor to close the file... [K[main a55211f5e] Merge branch 'testing'
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git sts[Katus
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git statuscommit "testing and main branch merge commit"[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [C[C[C[Cstatus[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit "testing and main branch merge commit"[A]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ [C[C[C[Cstatus[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd contribute.md [4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pgit statuscode contribute.md git switch testing[Ccode contribute.md[C[1Pat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit log --oneline --decorate --graph --all
+[?1h=*   [33ma55211f5e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Merge branch 'testing'[m
+[31m|[m[32m\[m  [m
+[31m|[m * [33m456fd46e4[m[33m ([m[1;32mtesting[m[33m)[m made a change[m
+* [32m|[m [33meb8d97ad8[m commit for hotfix[m
+* [32m|[m [33m52af01437[m made other changes[m
+[32m|[m[32m/[m  [m
+* [33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+* [33mff2d9bf53[m This is my first commit[m
+*   [33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m59af78a48[m Fix typo in general.c[m
+[33m|[m[33m/[m  [m
+*   [33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[35m|[m[36m\[m  [m
+[35m|[m * [33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[35m|[m * [33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[35m|[m[35m/[m  [m
+*   [33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+:[K[K [KESCESC[KOO[KBB[K[1;31m|[m[1;32m\[m  [m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ goit [K[K[K[Kit branch -d testing
+Deleted branch testing (was 456fd46e4).
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git branch -d testinglog --oneline --decorate --graph --all
+[?1h=*   [33ma55211f5e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Merge branch 'testing'[m
+[31m|[m[32m\[m  [m
+[31m|[m * [33m456fd46e4[m made a change[m
+* [32m|[m [33meb8d97ad8[m commit for hotfix[m
+* [32m|[m [33m52af01437[m made other changes[m
+[32m|[m[32m/[m  [m
+* [33mbe439974c[m[33m ([m[1;33mtag: v1.0[m[33m)[m This is my second commit.[m
+* [33mff2d9bf53[m This is my first commit[m
+*   [33mf313b3834[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #5954 from Crayon2000/patch-1[m
+[33m|[m[34m\[m  [m
+[33m|[m * [33m59af78a48[m Fix typo in general.c[m
+[33m|[m[33m/[m  [m
+*   [33mf08cae109[m Merge pull request #5767 from lhchavez/cgraph-reachable-from-any[m
+[35m|[m[36m\[m  [m
+[35m|[m * [33m8d453f163[m Swap the order of the `git_graph_reachable_from_any` params[m
+[35m|[m * [33mce5400cdc[m graph: Create `git_graph_reachable_from_any()`[m
+[35m|[m[35m/[m  [m
+*   [33m08c79128b[m Merge pull request #5766 from lhchavez/cgraph-generation-cmp[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ exit
+exit
+
+Script done on 2021-07-29 20:32:44+05:30 [COMMAND_EXIT_CODE="141"]
+Script started on 2021-07-29 22:50:47+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="15"]
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ git branch
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta[00m$ cd Desktop/git_files/libgit2/
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cd Desktop/git_files/libgit2/[19Pgit branch
+[?1h=* [32mmain[m[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ git branch --all
+[?1h=* [32mmain[m[m
+  [31mremotes/origin/HEAD[m -> origin/main[m
+  [31mremotes/origin/bindings/libgit2sharp/020_2[m[m
+  [31mremotes/origin/bindings/libgit2sharp/022_1[m[m
+  [31mremotes/origin/brianmario/attr-from-tree[m[m
+  [31mremotes/origin/brianmario/revwalk-filter[m[m
+  [31mremotes/origin/brianmario/trailer-info[m[m
+  [31mremotes/origin/brianmario/trailer-list[m[m
+  [31mremotes/origin/ci[m[m
+  [31mremotes/origin/cmn/annotated-from-tag[m[m
+  [31mremotes/origin/cmn/atexit-skeleton[m[m
+  [31mremotes/origin/cmn/cancellation[m[m
+  [31mremotes/origin/cmn/commit-on[m[m
+  [31mremotes/origin/cmn/config-nonewline[m[m
+:[K[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ 
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ gt[Kit branch
+[?1h=* [32mmain[m[m
+[K[?1l>]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ ls
+[0m[01;32mAUTHORS[0m         [01;32mCOPYING[0m    [01;32mSECURITY.md[0m   [34;42mci[0m     [01;32mcontribute.md[0m  [34;42mdocs[0m      [34;42mfuzzers[0m          [34;42minclude[0m       [34;42mscript[0m  [34;42mtests[0m
+[01;32mCMakeLists.txt[0m  [01;32mREADME.md[0m  [01;32mapi.docurium[0m  [34;42mcmake[0m  [34;42mdeps[0m           [34;42mexamples[0m  [01;32mgit.git-authors[0m  [01;32mpackage.json[0m  [34;42msrc[0m
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ cat contribute.md 
+This is a demo a file just to learn git.
+This is another line.
+This line is in main branch
+this is for hotfix
+adding line to check branching
+]0;saurabh@TIGERTEMP12: /mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[01;32msaurabh@TIGERTEMP12[00m:[01;34m/mnt/c/Users/saurabh.gupta/Desktop/git_files/libgit2[00m$ exit
+exit
+
+Script done on 2021-07-29 23:40:57+05:30 [COMMAND_EXIT_CODE="0"]
